@@ -14,7 +14,7 @@ registerForm.addEventListener("submit", (event) => {
     let password = passwordRegister.value.trim();
     let confirmPassword = confirmPasswordRegister.value.trim();
     let gender = document.querySelector('input[name="gender"]:checked');
-    let avatar = gender && gender.value === "male" ? "/assets/img/img-gender/avtMale.png" : "/assets/img/img-gender/avtFemale.png";
+    let avatar = gender && gender.value === "male" ? "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-gender/avtMale.png" : "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-gender/avtFemale.png";
 
     if (!fullName || !username || !password || !confirmPassword || !gender) {
         alert("Vui lòng điền đầy đủ thông tin!");
@@ -45,5 +45,5 @@ registerForm.addEventListener("submit", (event) => {
     localStorage.setItem("users", JSON.stringify(users));
     alert("Đăng ký thành công! Mời bạn đăng nhập.");
     registerForm.reset();
-    window.location.href = "/login.html";
+    window.location.href = "https://phat-nguyen06.github.io/gogi-html-css-js/login.html";
 });

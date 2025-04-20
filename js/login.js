@@ -45,11 +45,11 @@ loginForm.addEventListener("submit", (event) => {
     localStorage.setItem("currentUser", JSON.stringify(userInfo));
     errorMsg.style.display = "none";
     if(foundUser.role === "admin") {
-        window.location.href = "/admin/index.html";
+        window.location.href = "https://phat-nguyen06.github.io/gogi-html-css-js/admin/index.html";
         localStorage.setItem("loggedIn", "true");
     }
     else {
-        window.location.href = "/user/index.html";
+        window.location.href = "https://phat-nguyen06.github.io/gogi-html-css-js/user/index.html";
         localStorage.setItem("loggedIn", "true");
     }
 });

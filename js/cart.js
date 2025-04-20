@@ -7,7 +7,7 @@ cartCount.innerHTML = cartItemsCount;
 function addToCart(productId) {
     const isLoggedIn = localStorage.getItem("loggedIn") === "true";
     if (!isLoggedIn) {
-        window.location.href = "/login.html";
+        window.location.href = "https://phat-nguyen06.github.io/gogi-html-css-js/login.html";
         return;
     }
 
