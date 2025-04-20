@@ -52,9 +52,12 @@ function renderSlides() {
   sliderData.forEach((item, index) => {
     slidesHTML += `
       <div class="header-slider-content ${index === 0 ? 'active' : ''}">
-        <h2 class="slider-title">${item.title}</h2>
-        <p class="slider-description">${item.description}</p>
-        <button class="see-more">See more</button>
+        <div class="slider-info">  
+          <h2 class="slider-title">${item.title}</h2>
+          <p class="slider-description">${item.description}</p>
+          <button class="see-more">See more</button>
+        </div>
+        
         <div class="image-slider">
           <button class="prev">&lt;</button>
           <img src="${item.image}" alt="Món ăn" id="slider-image" class="slider-image">
