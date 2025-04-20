@@ -387,22 +387,24 @@ searchInput.addEventListener("input", () => {
 
 
 // LỌC
-// let isPriceAsc = true;
+let isPriceAsc = true;
 
-// document.querySelector(".btn-sort-price-toggle").addEventListener("click", () => {
-//     let sortedFoods = [...menuFoods];
-//     if (isPriceAsc) {
-//         sortedFoods.sort((a, b) => a.price - b.price); 
-//         document.querySelector(".btn-sort-price-toggle").textContent = "Sắp xếp theo giá ↓";
-//     } else {
-//         sortedFoods.sort((a, b) => b.price - a.price); 
-//         document.querySelector(".btn-sort-price-toggle").textContent = "Sắp xếp theo giá ↑";
-//     }
-//     isPriceAsc = !isPriceAsc;
-//     currentPage = 1;
-//     renderMenuFoods(sortedFoods);
-// });
-
+const btnSort = document.querySelector(".btn-sort-price-toggle");
+if (btnSort) {
+    btnSort.addEventListener("click", () => {
+        let sortedFoods = [...menuFoods];
+        if (isPriceAsc) {
+            sortedFoods.sort((a, b) => a.price - b.price); 
+            btnSort.textContent = "Sắp xếp theo giá ↓";
+        } else {
+            sortedFoods.sort((a, b) => b.price - a.price); 
+            btnSort.textContent = "Sắp xếp theo giá ↑";
+        }
+        isPriceAsc = !isPriceAsc;
+        currentPage = 1;
+        renderMenuFoods(sortedFoods);
+    });
+}
 // const isLoggedIn = localStorage.getItem("loggedIn") === "true";
 
 

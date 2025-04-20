@@ -84,12 +84,24 @@ function removeFoods(index) {
 
     setTimeout(() => {
         cart.splice(index, 1);
+        Toastify({
+            text: "Đã xóa món ăn khỏi giỏ hàng",
+            duration: 3000,
+            gravity: "top",
+            position: "right",
+            backgroundColor: "#3a2a26",
+            stopOnFocus: true,
+            style: {
+                color: "#fff",
+                borderRadius: "8px",
+                fontWeight: "bold"
+            }
+        }).showToast();
         renderCart();
         localStorage.setItem("cart", JSON.stringify(cart));
         localStorage.setItem("cartItemsCount", cart.reduce((acc, item) => acc + item.quantity, 0));
     }, 500);
 }
-
 
 
 renderCart();
