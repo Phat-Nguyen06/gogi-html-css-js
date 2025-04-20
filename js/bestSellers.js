@@ -4,42 +4,42 @@ let bestSellers = [
         price: 120000,
         sold: 150,
         rating: 5,
-        image: "/assets/img/img-bestseller/diem_bung_tuoi_200_6.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-bestseller/diem_bung_tuoi_200_6.png"
     },
     {
         title: "Món 2",
         price: 95000,
         sold: 230,
         rating: 4,
-        image: "/assets/img/img-bestseller/lau_bulgogi_2.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-bestseller/lau_bulgogi_2.png"
     },
     {
         title: "Món 3",
         price: 110000,
         sold: 190,
         rating: 5,
-        image: "/assets/img/img-bestseller/Canh_kim_chi_3.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-bestseller/Canh_kim_chi_3.png"
     },
     {
         title: "Món 4",
         price: 105000,
         sold: 100,
         rating: 3,
-        image: "/assets/img/img-bestseller/tom_alc_4.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-bestseller/tom_alc_4.png"
     },
     {
         title: "Món 5",
         price: 130000,
         sold: 215,
         rating: 4,
-        image: "/assets/img/img-bestseller/nac_vai_cay_5.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-bestseller/nac_vai_cay_5.png"
     },
     {
         title: "Món 6",
         price: 115000,
         sold: 180,
         rating: 5,
-        image: "/assets/img/img-bestseller/ba_chi_bo_my_sot_mat_ong_7.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-bestseller/ba_chi_bo_my_sot_mat_ong_7.png"
     }
 ];
 
