@@ -30,7 +30,7 @@ avatarContainer.addEventListener("click", () => {
     localStorage.removeItem("currentUser");
     localStorage.removeItem("cart");
     localStorage.removeItem("cartItemsCount");
-    window.location.href = "/index.html";
+    window.location.href = "https://phat-nguyen06.github.io/gogi-html-css-js/index.html";
   });
 
   infoBox.classList.toggle("hidden");
