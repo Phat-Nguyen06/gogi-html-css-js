@@ -1,41 +1,41 @@
 let bestSellers = [
     {
-        title: "Món 1",
+        title: "Diềm bụng bò Mỹ",
         price: 120000,
         sold: 150,
         rating: 5,
         image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-bestseller/diem_bung_tuoi_200_6.png"
     },
     {
-        title: "Món 2",
+        title: "Lẩu bull gogi",
         price: 95000,
         sold: 230,
         rating: 4,
         image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-bestseller/lau_bulgogi_2.png"
     },
     {
-        title: "Món 3",
+        title: "Canh kim chi",
         price: 110000,
         sold: 190,
         rating: 5,
         image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-bestseller/Canh_kim_chi_3.png"
     },
     {
-        title: "Món 4",
+        title: "Tôm nướng Gogi",
         price: 105000,
         sold: 100,
         rating: 3,
         image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-bestseller/tom_alc_4.png"
     },
     {
-        title: "Món 5",
+        title: "Má heo Mỹ tươi",
         price: 130000,
         sold: 215,
         rating: 4,
         image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-bestseller/nac_vai_cay_5.png"
     },
     {
-        title: "Món 6",
+        title: "Sườn Non Bò Mỹ",
         price: 115000,
         sold: 180,
         rating: 5,
@@ -55,7 +55,7 @@ function renderBestSellersList() {
         <div class="bestseller-card">
           <img src="${bestSellers.image}" alt="${bestSellers.title}" class="bestseller-card-img">
           <div class="bestseller-card-title"><span>${bestSellers.title}</span></div>
-          <div class="bestseller-card-price"><span>${bestSellers.price}</span></div>
+          <div class="bestseller-card-price"><span>${bestSellers.price.toLocaleString("vi-VN")}₫</span></div>
           <div class="bestseller-card-sales">
             <div>${renderStars(bestSellers.rating)}</div>
             <span>Đã bán: ${bestSellers.sold}</span>

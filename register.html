@@ -11,8 +11,8 @@
 <body>
   <!-- NAVBAR -->
   <header class="navbar">
-    <a href="https://phat-nguyen06.github.io/gogi-html-css-js/index.html"><img src="./assets/img/img-header-nav/logo-nav.png" alt="Gogi House Logo" class="nav-logo"
-        id="nav-logo"></a>
+    <a href="https://phat-nguyen06.github.io/gogi-html-css-js/index.html"><img
+        src="./assets/img/img-header-nav/logo-nav.png" alt="Gogi House Logo" class="nav-logo" id="nav-logo"></a>
     <div>
       <a href="https://phat-nguyen06.github.io/gogi-html-css-js/login.html" class="nav-link">Đăng nhập</a>
       <a href="https://phat-nguyen06.github.io/gogi-html-css-js/register.html" class="nav-link active">Đăng ký</a>
@@ -33,10 +33,17 @@
     <div class="register-right">
       <form class="register-form" id="register-form">
         <h2>Đăng ký</h2>
-        <input type="text" id="fullName" placeholder="Họ và tên" required />
-        <input type="text" id="username" placeholder="Tên đăng nhập" required />
-        <input type="password" id="password" placeholder="Mật khẩu" required />
-        <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu" required />
+        <input type="text" id="fullName" placeholder="Họ và tên" />
+        <span class="error-msg" id="error-fullName"></span>
+
+        <input type="text" id="username" placeholder="Tên đăng nhập" />
+        <span class="error-msg" id="error-username"></span>
+
+        <input type="password" id="password" placeholder="Mật khẩu" />
+        <span class="error-msg" id="error-password"></span>
+
+        <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu" />
+        <span class="error-msg" id="error-confirmPassword"></span>
 
         <!-- Giới tính -->
         <div class="gender-selection">

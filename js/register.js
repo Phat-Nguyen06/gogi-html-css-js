@@ -4,6 +4,11 @@ let usernameRegister = document.getElementById("username");
 let passwordRegister = document.getElementById("password");
 let confirmPasswordRegister = document.getElementById("confirmPassword");
 
+const errorFullNameRegister = document.getElementById("error-fullName");
+const errorUsernameRegister = document.getElementById("error-username");
+const errorPasswordRegister = document.getElementById("error-password");
+const errorConfirmPasswordRegister = document.getElementById("error-confirmPassword");
+
 let users = JSON.parse(localStorage.getItem("users")) || [];
 
 registerForm.addEventListener("submit", (event) => {
@@ -16,9 +21,37 @@ registerForm.addEventListener("submit", (event) => {
     let gender = document.querySelector('input[name="gender"]:checked');
     let avatar = gender && gender.value === "male" ? "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-gender/avtMale.png" : "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-gender/avtFemale.png";
 
-    if (!fullName || !username || !password || !confirmPassword || !gender) {
-        alert("Vui lòng điền đầy đủ thông tin!");
+    if (fullName == "") {
+        errorFullNameRegister.textContent = "Vui lòng nhập họ và tên.";
+        errorFullNameRegister.style.display = "block";
+    } else {
+        errorFullNameRegister.textContent = "";
+        errorFullNameRegister.style.display = "none";
+    }
+
+    if (username == "") {
+        errorUsernameRegister.textContent = "Vui lòng nhập tên đăng nhập.";
+        errorUsernameRegister.style.display = "block";
+    } else {
+        errorUsernameRegister.textContent = "";
+        errorUsernameRegister.style.display = "none";
+    }
+
+    if (password == "") {
+        errorPasswordRegister.textContent = "Vui lòng nhập mật khẩu.";
+        errorPasswordRegister.style.display = "block";
+    } else {
+        errorPasswordRegister.textContent = "";
+        errorPasswordRegister.style.display = "none";
+    }
+
+    if (confirmPassword == "") {
+        errorConfirmPasswordRegister.textContent = "Vui lòng nhập lại mật khẩu.";
+        errorConfirmPasswordRegister.style.display = "block";
         return;
+    } else {
+        errorConfirmPasswordRegister.textContent = "";
+        errorConfirmPasswordRegister.style.display = "none";
     }
 
     let isExist = users.some(acc => acc.username == username);

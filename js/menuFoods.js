@@ -182,213 +182,15 @@ let menuFoods = [
         rating: 5,
         type: "Thịt Bò",
         image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food23-suon-non-bo-my-sot- obathan.png"
-    },
-    {
-        title: "Canh lòng bò",
-        price: 250000,
-        sold: 0,
-        rating: 0,
-        type: "Cơm/Canh/Mỳ",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Salad Cá Hồi",
-        price: 89000,
-        sold: 6,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Salad mùa xuân",
-        price: 79000,
-        sold: 4,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Há cảo truyền thống Hàn Quốc",
-        price: 79000,
-        sold: 8,
-        rating: 4,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Set kimbap (ALC)",
-        price: 69000,
-        sold: 7,
-        rating: 5,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Toboki xào hải sản",
-        price: 109000,
-        sold: 7,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Bánh Xèo Hải Sản",
-        price: 129000,
-        sold: 2,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Nấm nướng",
-        price: 19000,
-        sold: 2,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Salad hành paro",
-        price: 69000,
-        sold: 0,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Salad cá ngừ (ALC)",
-        price: 79000,
-        sold: 1,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Salad Hoa Quả",
-        price: 99000,
-        sold: 3,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Salad tổng hợp",
-        price: 69000,
-        sold: 4,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Salad cải bó xôi",
-        price: 69000,
-        sold: 999,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Mỳ tương đen",
-        price: 79000,
-        sold: 2,
-        rating: 4,
-        type: "Cơm/Canh/Mỳ",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Miến xào",
-        price: 79000,
-        sold: 0,
-        rating: 0,
-        type: "Cơm/Canh/Mỳ",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Cơm rang kim chi (ALC)",
-        price: 79000,
-        sold: 7,
-        rating: 5,
-        type: "Cơm/Canh/Mỳ",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Canh lòng bò",
-        price: 250000,
-        sold: 0,
-        rating: 0,
-        type: "Cơm/Canh/Mỳ",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Salad Cá Hồi",
-        price: 89000,
-        sold: 6,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Salad mùa xuân",
-        price: 79000,
-        sold: 4,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Há cảo truyền thống Hàn Quốc",
-        price: 79000,
-        sold: 8,
-        rating: 4,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Set kimbap (ALC)",
-        price: 69000,
-        sold: 7,
-        rating: 5,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Toboki xào hải sản",
-        price: 109000,
-        sold: 7,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Bánh Xèo Hải Sản",
-        price: 129000,
-        sold: 2,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Nấm nướng",
-        price: 19000,
-        sold: 2,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
-    },
-    {
-        title: "Salad hành paro",
-        price: 69000,
-        sold: 0,
-        rating: 0,
-        type: "Salad/Khai Vị",
-        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     }
 ];
+
 
 let currentPage = 1;
 let foodsPerPage = 8;
 
 let menuFoodsList = document.querySelector(".product-grid-js");
+let pageNumber = document.querySelector(".page-number");
 function renderMenuFoods(data = menuFoods) {
     let textMenuFoods = "";
 
@@ -396,7 +198,7 @@ function renderMenuFoods(data = menuFoods) {
     let end = start + foodsPerPage;
     let foodsToShow = data.slice(start, end);
 
-    foodsToShow.forEach(food => {
+    foodsToShow.forEach((food, index) => {
         textMenuFoods += `
         <div class="product-card">
             <i class="fa-solid fa-heart favourite-dish" id="favourite-dish"></i>
@@ -408,7 +210,9 @@ function renderMenuFoods(data = menuFoods) {
             <p class="sold">đã bán ${food.sold}</p>
             <div class="product-card-button-container">
                 <button class="btn-review">Xem đánh giá</button>
-                <button class="btn-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="btn-cart" onclick="addToCart('menuFoods-${index + 1}')">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
             </div>
         </div>
         `;
@@ -428,8 +232,9 @@ function renderMenuFoods(data = menuFoods) {
 // PHÂN TRANG //
 let paginationContainer = document.querySelector(".pagination-js")
 function renderPagination() {
-    paginationContainer.innerHTML = "";
     let totalPage = Math.ceil(menuFoods.length / foodsPerPage);
+    pageNumber.textContent = `${currentPage}/${totalPage}`;
+    paginationContainer.innerHTML = "";
 
     // Nút Prev
     let prevBtn = document.createElement("button");
@@ -449,7 +254,7 @@ function renderPagination() {
         for (let i = 1; i <= totalPage; i++) {
             let pageBtn = document.createElement("button");
             pageBtn.textContent = i;
-            
+
             if (i === currentPage) pageBtn.classList.add("active");
 
             pageBtn.addEventListener("click", () => {
@@ -579,5 +384,26 @@ searchInput.addEventListener("input", () => {
     renderMenuFoods(filterMenuFood);
     // renderPagination();
 });
+
+
+// LỌC
+// let isPriceAsc = true;
+
+// document.querySelector(".btn-sort-price-toggle").addEventListener("click", () => {
+//     let sortedFoods = [...menuFoods];
+//     if (isPriceAsc) {
+//         sortedFoods.sort((a, b) => a.price - b.price); 
+//         document.querySelector(".btn-sort-price-toggle").textContent = "Sắp xếp theo giá ↓";
+//     } else {
+//         sortedFoods.sort((a, b) => b.price - a.price); 
+//         document.querySelector(".btn-sort-price-toggle").textContent = "Sắp xếp theo giá ↑";
+//     }
+//     isPriceAsc = !isPriceAsc;
+//     currentPage = 1;
+//     renderMenuFoods(sortedFoods);
+// });
+
+// const isLoggedIn = localStorage.getItem("loggedIn") === "true";
+
 
 renderMenuFoods();
