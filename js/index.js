@@ -13,32 +13,32 @@ const sliderData = [
   {
     title: "Lẩu bull gogi",
     description: "Lẩu Bulgogi là món ăn truyền thống của Hàn Quốc, được tạo nên từ các loại thịt bò được ướp trong nước sốt đậm đà và nấu trong nồi lẩu sôi sùng sục. Thịt bò mềm ngọt hòa quyện cùng các loại rau củ tươi ngon như nấm, bắp cải và hành lá, tạo ra hương vị đậm đà và hấp dẫn. Món lẩu này được thưởng thức nóng hổi, giúp ấm áp cơ thể và khơi dậy vị giác. Lẩu Bulgogi là sự lựa chọn hoàn hảo cho bữa ăn gia đình hay tụ họp bạn bè, mang đến trải nghiệm ẩm thực đầy thú vị.",
-    image: "./assets/img/img-slider-right/lau_bulgogi_1.png"
+    image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-slider-right/lau_bulgogi_1.png"
   },
   {
     title: "Canh kim chi",
     description: "Canh Kim Chi là món canh truyền thống của Hàn Quốc, mang hương vị đặc trưng của kim chi chua cay, kết hợp cùng các nguyên liệu tươi ngon khác. Lớp nước canh trong veo được nêm nếm vừa vặn, tôn lên vị chua của kim chi và vị ngọt tự nhiên của các thành phần khác như tôm, thịt, nấm và rau củ. Sự hòa quyện của những hương vị này tạo nên một món canh đầy dinh dưỡng và hấp dẫn, vừa ấm áp dễ uống lại vừa kích thích vị giác. Canh Kim Chi là một lựa chọn hoàn hảo để bắt đầu hoặc kết thúc bữa ăn truyền thống Hàn Quốc.",
-    image: "./assets/img/img-slider-right/Canh_kim_chi_1.png"
+    image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-slider-right/Canh_kim_chi_1.png"
   },
   {
     title: "Tôm nướng Gogi (ALC)",
     description: "Tôm Nướng Gogi là một món ăn hấp dẫn trong ẩm thực Hàn Quốc, kết hợp hương vị ngọt của tôm với vị cay, thơm của nước sốt gogi. Những con tôm tươi ngon được nướng vàng ươm trên ngọn lửa, tạo ra lớp vỏ giòn bên ngoài và thịt tôm mềm ngọt bên trong. Món ăn được chan đều nước sốt gogi chua cay, mang lại sự hoà quyện đầy thú vị giữa các hương vị. Tôm Nướng Gogi thường được thưởng thức cùng các món ăn khác như cơm, rau sống và kim chi, tạo nên một bữa ăn Hàn Quốc đậm đà và đầy hấp dẫn.",
-    image: "./assets/img/img-slider-right/tom_alc_1.png"
+    image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-slider-right/tom_alc_1.png"
   },
   {
     title: "Má heo Mỹ tươi/Sốt obathan",
     description: "Má heo Mỹ tươi với sốt obathan gogi là một món ăn truyền thống của Hàn Quốc. Thịt lợn được ướp gia vị đậm đà, xào cùng với sốt obathan gogi cân bằng ngọt, mặn và cay. Món ăn này thường được ăn kèm với cơm trắng hoặc rau sống để tạo nên một bữa ăn hoàn chỉnh.",
-    image: "./assets/img/img-slider-right/ma-heo-my.png"
+    image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-slider-right/ma-heo-my.png"
   },
   {
     title: "Diềm bụng bò Mỹ/ Canada Tươi/ sốt OBT",
     description: "Salad cải bó xôi là một món ăn gồm những chiếc lá cải bó xôi tươi xanh mướt, được trộn với các nguyên liệu như thịt bò, hành tây, tỏi, nước tương và gia vị. Các thành phần này thường được nướng lên để tạo ra hương vị đậm đà, ngọt bùi. Khi ăn, salad được cuốn cùng với các loại rau sống như xà lách, rau mùi và chan thêm nước sốt đặc trưng. Sự kết hợp giữa vị ngọt của thịt nướng, vị chua của nước sốt và sự giòn mềm của các loại rau tạo nên một món ăn đầy hương vị và cân bằng dinh dưỡng.",
-    image: "./assets/img/img-slider-right/diem_bung_tuoi_200_1.png"
+    image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-slider-right/diem_bung_tuoi_200_1.png"
   },
   {
     title: "Sườn Non Bò Mỹ LA Sốt Galbir",
     description: "Salad cải bó xôi là một món ăn gồm những chiếc lá cải bó xôi tươi xanh mướt, được trộn với các nguyên liệu như thịt bò, hành tây, tỏi, nước tương và gia vị. Các thành phần này thường được nướng lên để tạo ra hương vị đậm đà, ngọt bùi. Khi ăn, salad được cuốn cùng với các loại rau sống như xà lách, rau mùi và chan thêm nước sốt đặc trưng. Sự kết hợp giữa vị ngọt của thịt nướng, vị chua của nước sốt và sự giòn mềm của các loại rau tạo nên một món ăn đầy hương vị và cân bằng dinh dưỡng.",
-    image: "./assets/img/img-slider-right/ba_chi_bo_my_sot_mat_ong_1_1.png"
+    image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-slider-right/ba_chi_bo_my_sot_mat_ong_1_1.png"
   },
 ];
 

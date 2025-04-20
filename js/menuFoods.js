@@ -5,7 +5,7 @@ let menuFoods = [
         sold: 1,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods/food1-salad-ca-hoi.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food1-salad-ca-hoi.png"
     },
     {
         title: "Salad mùa xuân",
@@ -13,7 +13,7 @@ let menuFoods = [
         sold: 3,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods/food2-salad-mua-xuan.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food2-salad-mua-xuan.png"
     },
     {
         title: "Há cảo truyền thống Hàn Quốc",
@@ -21,7 +21,7 @@ let menuFoods = [
         sold: 4,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods/food3-há cao-truyen-thong-hàn-quoc.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food3-há cao-truyen-thong-hàn-quoc.png"
     },
     {
         title: "Set kimbap (ALC)",
@@ -29,7 +29,7 @@ let menuFoods = [
         sold: 999,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods/food4-set-kim-bap (ALC).png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food4-set-kim-bap (ALC).png"
     },
     {
         title: "Toboki xào hải sản",
@@ -37,7 +37,7 @@ let menuFoods = [
         sold: 2,
         rating: 4,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods/food5-toboki-xao-hai-san.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food5-toboki-xao-hai-san.png"
     },
     {
         title: "Bánh Xèo Hải Sản",
@@ -45,7 +45,7 @@ let menuFoods = [
         sold: 0,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods/food6-banh-xeo-hai-san.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food6-banh-xeo-hai-san.png"
     },
     {
         title: "Nấm nướng",
@@ -53,7 +53,7 @@ let menuFoods = [
         sold: 7,
         rating: 5,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods/food7-nam-nuong.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food7-nam-nuong.png"
     },
     {
         title: "Salad hành paro",
@@ -61,7 +61,7 @@ let menuFoods = [
         sold: 0,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods/food8-salad-hanh-paro.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food8-salad-hanh-paro.png"
     },
     {
         title: "Salad cá ngừ (ALC)",
@@ -69,7 +69,7 @@ let menuFoods = [
         sold: 6,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods/food9-salad-ca-ngu(ALC.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food9-salad-ca-ngu(ALC.png"
     },
     {
         title: "Salad Hoa Quả",
@@ -77,7 +77,7 @@ let menuFoods = [
         sold: 4,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods/food10-salad-hoa-qua.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food10-salad-hoa-qua.png"
     },
     {
         title: "Salad tổng hợp",
@@ -85,7 +85,7 @@ let menuFoods = [
         sold: 8,
         rating: 4,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods/food11-salad-tong-hop.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food11-salad-tong-hop.png"
     },
     {
         title: "Salad cải bó xôi",
@@ -93,7 +93,7 @@ let menuFoods = [
         sold: 7,
         rating: 5,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods/food12-salad-cai-bo-soi.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food12-salad-cai-bo-soi.png"
     },
     {
         title: "Mỳ tương đen",
@@ -101,7 +101,7 @@ let menuFoods = [
         sold: 7,
         rating: 0,
         type: "Cơm/Canh/Mỳ",
-        image: "/assets/img/img-foods/food13-my-tuong-den.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food13-my-tuong-den.png"
     },
     {
         title: "Miến xào",
@@ -109,7 +109,7 @@ let menuFoods = [
         sold: 2,
         rating: 0,
         type: "Cơm/Canh/Mỳ",
-        image: "/assets/img/img-foods/food14-mien-xao.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food14-mien-xao.png"
     },
     {
         title: "Cơm rang kim chi (ALC)",
@@ -117,7 +117,7 @@ let menuFoods = [
         sold: 2,
         rating: 0,
         type: "Cơm/Canh/Mỳ",
-        image: "/assets/img/img-foods/food15-com-rang-kim-chi(ALC).png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food15-com-rang-kim-chi(ALC).png"
     },
     {
         title: "Canh lòng bò",
@@ -125,7 +125,7 @@ let menuFoods = [
         sold: 0,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods/food16-canh-long-bo.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food16-canh-long-bo.png"
     },
     {
         title: "Canh rong biển thịt",
@@ -133,7 +133,7 @@ let menuFoods = [
         sold: 1,
         rating: 0,
         type: "Cơm/Canh/Mỳ",
-        image: "/assets/img/img-foods/food17-canh-rong-bien-thit.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food17-canh-rong-bien-thit.png"
     },
     {
         title: "Cơm Hàn Quốc",
@@ -141,7 +141,7 @@ let menuFoods = [
         sold: 3,
         rating: 0,
         type: "Cơm/Canh/Mỳ",
-        image: "/assets/img/img-foods/food18-com-han-quoc.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food18-com-han-quoc.png"
     },
     {
         title: "Cơm bát đá nóng",
@@ -149,7 +149,7 @@ let menuFoods = [
         sold: 4,
         rating: 0,
         type: "Cơm/Canh/Mỳ",
-        image: "/assets/img/img-foods/food19-com-bat-da-nong.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food19-com-bat-da-nong.png"
     },
     {
         title: "Canh sườn bò",
@@ -157,7 +157,7 @@ let menuFoods = [
         sold: 999,
         rating: 0,
         type: "Cơm/Canh/Mỳ",
-        image: "/assets/img/img-foods/food20-canh-suong-bo.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food20-canh-suong-bo.png"
     },
     {
         title: "Sườn Non Bò Mỹ Sốt Obathan",
@@ -165,7 +165,7 @@ let menuFoods = [
         sold: 2,
         rating: 5,
         type: "Thịt Bò",
-        image: "/assets/img/img-foods/food21-suon-non-bo-my-la-sot-galbi.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food21-suon-non-bo-my-la-sot-galbi.png"
     },
     {
         title: "Sườn Non Bò Mỹ LA Sốt Galbi 150gr",
@@ -173,7 +173,7 @@ let menuFoods = [
         sold: 0,
         rating: 0,
         type: "Thịt Bò",
-        image: "/assets/img/img-foods/food22-suon-non-bo-my-sot- obathan.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food22-suon-non-bo-my-sot- obathan.png"
     },
     {
         title: "Sườn Non Bò Mỹ LA Sốt Galbi 150gr",
@@ -181,7 +181,7 @@ let menuFoods = [
         sold: 7,
         rating: 5,
         type: "Thịt Bò",
-        image: "/assets/img/img-foods/food23-suon-non-bo-my-sot- obathan.png"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods/food23-suon-non-bo-my-sot- obathan.png"
     },
     {
         title: "Canh lòng bò",
@@ -189,7 +189,7 @@ let menuFoods = [
         sold: 0,
         rating: 0,
         type: "Cơm/Canh/Mỳ",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Salad Cá Hồi",
@@ -197,7 +197,7 @@ let menuFoods = [
         sold: 6,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Salad mùa xuân",
@@ -205,7 +205,7 @@ let menuFoods = [
         sold: 4,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Há cảo truyền thống Hàn Quốc",
@@ -213,7 +213,7 @@ let menuFoods = [
         sold: 8,
         rating: 4,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Set kimbap (ALC)",
@@ -221,7 +221,7 @@ let menuFoods = [
         sold: 7,
         rating: 5,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Toboki xào hải sản",
@@ -229,7 +229,7 @@ let menuFoods = [
         sold: 7,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Bánh Xèo Hải Sản",
@@ -237,7 +237,7 @@ let menuFoods = [
         sold: 2,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Nấm nướng",
@@ -245,7 +245,7 @@ let menuFoods = [
         sold: 2,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Salad hành paro",
@@ -253,7 +253,7 @@ let menuFoods = [
         sold: 0,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Salad cá ngừ (ALC)",
@@ -261,7 +261,7 @@ let menuFoods = [
         sold: 1,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Salad Hoa Quả",
@@ -269,7 +269,7 @@ let menuFoods = [
         sold: 3,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Salad tổng hợp",
@@ -277,7 +277,7 @@ let menuFoods = [
         sold: 4,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Salad cải bó xôi",
@@ -285,7 +285,7 @@ let menuFoods = [
         sold: 999,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Mỳ tương đen",
@@ -293,7 +293,7 @@ let menuFoods = [
         sold: 2,
         rating: 4,
         type: "Cơm/Canh/Mỳ",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Miến xào",
@@ -301,7 +301,7 @@ let menuFoods = [
         sold: 0,
         rating: 0,
         type: "Cơm/Canh/Mỳ",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Cơm rang kim chi (ALC)",
@@ -309,7 +309,7 @@ let menuFoods = [
         sold: 7,
         rating: 5,
         type: "Cơm/Canh/Mỳ",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Canh lòng bò",
@@ -317,7 +317,7 @@ let menuFoods = [
         sold: 0,
         rating: 0,
         type: "Cơm/Canh/Mỳ",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Salad Cá Hồi",
@@ -325,7 +325,7 @@ let menuFoods = [
         sold: 6,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Salad mùa xuân",
@@ -333,7 +333,7 @@ let menuFoods = [
         sold: 4,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Há cảo truyền thống Hàn Quốc",
@@ -341,7 +341,7 @@ let menuFoods = [
         sold: 8,
         rating: 4,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Set kimbap (ALC)",
@@ -349,7 +349,7 @@ let menuFoods = [
         sold: 7,
         rating: 5,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Toboki xào hải sản",
@@ -357,7 +357,7 @@ let menuFoods = [
         sold: 7,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Bánh Xèo Hải Sản",
@@ -365,7 +365,7 @@ let menuFoods = [
         sold: 2,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Nấm nướng",
@@ -373,7 +373,7 @@ let menuFoods = [
         sold: 2,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     },
     {
         title: "Salad hành paro",
@@ -381,7 +381,7 @@ let menuFoods = [
         sold: 0,
         rating: 0,
         type: "Salad/Khai Vị",
-        image: "/assets/img/img-foods"
+        image: "https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-foods"
     }
 ];
 
