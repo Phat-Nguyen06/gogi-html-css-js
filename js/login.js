@@ -1,3 +1,22 @@
+Toastify({
+    text: "Chào mừng bạn! Hãy đăng nhập để mua sắm ngay.",
+    duration: 3000,
+    gravity: "top",
+    position: "center",
+    close: true,
+    escapeMarkup: false,
+    style: {
+        background: "#A67B5B",
+        color: "#FAF9F6",
+        borderRadius: "12px",
+        padding: "12px 16px",
+        fontWeight: "bold",
+        fontFamily: "inherit",
+        boxShadow: "0 4px 10px rgba(0,0,0,0.3)"
+    },
+    stopOnFocus: true
+}).showToast();
+
 const adminAccount = {
     username: "admin",
     password: "admin123",
@@ -44,7 +63,7 @@ loginForm.addEventListener("submit", (event) => {
 
     localStorage.setItem("currentUser", JSON.stringify(userInfo));
     errorMsg.style.display = "none";
-    if(foundUser.role === "admin") {
+    if (foundUser.role === "admin") {
         window.location.href = "https://phat-nguyen06.github.io/gogi-html-css-js/admin/index.html";
         localStorage.setItem("loggedIn", "true");
     }

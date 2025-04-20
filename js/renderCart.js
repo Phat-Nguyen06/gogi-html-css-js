@@ -48,6 +48,22 @@ btnCheckout.addEventListener('click', () => {
     localStorage.removeItem("cart");
     localStorage.removeItem("cartItemsCount");
     cart = [];
+    Toastify({
+        text: "Thanh toán thành công! Cảm ơn bạn đã đặt món tại GOGI HOUSE!",
+        duration: 4000,
+        gravity: "top",
+        position: "center",
+        backgroundColor: "#6b4c3b",
+        style: {
+            color: "#fff",
+            fontWeight: "bold",
+            fontSize: "16px",
+            borderRadius: "8px",
+            padding: "12px 20px",
+            boxShadow: "0 5px 12px rgba(0,0,0,0.3)"
+        },
+        avatar: "https://cdn-icons-png.flaticon.com/512/3595/3595455.png" // icon thanh toán
+    }).showToast();
     renderCart();
 });
 

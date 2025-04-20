@@ -76,7 +76,28 @@ registerForm.addEventListener("submit", (event) => {
 
     users.push(newUser);
     localStorage.setItem("users", JSON.stringify(users));
-    alert("Đăng ký thành công! Mời bạn đăng nhập.");
-    registerForm.reset();
-    window.location.href = "https://phat-nguyen06.github.io/gogi-html-css-js/login.html";
+    Toastify({
+        text: '<i class="fa fa-check-circle"></i> <strong>Đăng ký thành công!</strong>',
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        close: true,
+        escapeMarkup: false,
+        style: {
+            background: "#A67B5B",
+            color: "#FAF9F6",
+            borderRadius: "12px",
+            padding: "12px 16px",
+            fontWeight: "bold",
+            fontFamily: "inherit",
+            boxShadow: "0 4px 10px rgba(0,0,0,0.3)"
+        },
+        stopOnFocus: true
+    }).showToast();
+
+    // Đợi toast hiển thị xong rồi mới chuyển trang
+    setTimeout(() => {
+        registerForm.reset();
+        window.location.href = "https://phat-nguyen06.github.io/gogi-html-css-js/login.html";;
+    }, 1000);
 });

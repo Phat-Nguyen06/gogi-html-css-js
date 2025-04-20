@@ -36,5 +36,21 @@ function addToCart(productId) {
 
 
     localStorage.setItem("cart", JSON.stringify(cart));
-    alert(`${product.title} đã được thêm vào giỏ hàng.`);
+    Toastify({
+        text: "Đã thêm món vào giỏ hàng!",
+        duration: 3000,
+        close: true,
+        gravity: "top",
+        position: "right",
+        backgroundColor: "linear-gradient(to right, #a67b5b, #8b5e3c)",
+        stopOnFocus: true,
+        style: {
+            color: "#fff",
+            fontWeight: "bold",
+            borderRadius: "12px",
+            fontSize: "14px",
+            fontFamily: "inherit",
+        },
+        avatar: "https://cdn-icons-png.flaticon.com/512/34/34568.png"
+    }).showToast();
 }
