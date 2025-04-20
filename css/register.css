@@ -215,3 +215,11 @@ body {
   accent-color: #c62828;
   cursor: pointer;
 }
+
+
+.error-msg {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  display: none;
+}
