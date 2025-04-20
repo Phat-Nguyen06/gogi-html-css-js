@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBQ Gogi House</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Libre+Baskerville&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b988689d5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="loader" class="modal-loader">
+        <div class="loader">
+            <div class="panWrapper">
+                <div class="pan">
+                    <div class="food"></div>
+                    <div class="panBase"></div>
+                    <div class="panHandle"></div>
+                </div>
+                <div class="panShadow"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <!-- GIỎ HÀNG -->
+        <a href="/login.html">
+            <div class="floating-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </a>
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-nav">
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#your-best-choice">Thực đơn</a></li>
+                        <li><a href="#media-section">Tin Tức</a></li>
+                        <li>
+                            <img src="./assets/img/img-header-nav/logo-nav.png" alt="GOGI-LOGO">
+                        </li>
+                        <li><a href="#">Trợ giúp</a></li>
+                        <li><a href="#">Thông báo</a></li>
+                        <li><a href="./login.html">Đăng nhập</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- HEADER SLIDER -->
+            <div class="header-slider">
+                <div class="header-slider-left">
+                    <div class="header-slider-title">
+                        <p id="header-slider-title-bbq">BBQ</p>
+                        <p id="header-slider-title-gogi">GOGI</p>
+                        <p id="header-slider-title-house">HOUSE</p>
+                    </div>
+                </div>
+
+                <div class="header-slider-right header-slider-right-js">
+                    <!-- <div class="header-slider-content active">
+                        <h2 class="slider-title">Salad cải bó xôi 1</h2>
+                        <p class="slider-description">Mô tả cho salad cải bó xôi 1...</p>
+                        <button class="see-more">See more</button>
+
+                        <div class="image-slider">
+                            <button class="prev">&lt;</button>
+                            <img src="/assets/img/img-slider-right/ma-heo-my.png" alt="Món ăn" id="slider-image" class="slider-image ">
+                            <button class="next">&gt;</button>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+
+            <!-- HEADER PRODUCT DESCRIPTION -->
+            <div class="header_product_desciption" id="header_product_desciption-js">
+                <div class="header_product_desciption_left">
+                    <div class="desc-img">
+                        <img src="./assets/img/img-header-product-desciption/cutting-board.png" alt="cutting-board"
+                            class="img-cutting-board" id="desc-image">
+
+                        <img src="./assets/img/img-header-product-desciption/vegetable.png" alt="vegetable"
+                            class="img-vegetable">
+
+                        <img class="img-from-slider" src="" alt="transition image">
+
+                        <img src="./assets/img/img-header-product-desciption/tomato.png" alt="tomatos"
+                            class="img-tomato">
+                    </div>
+                </div>
+
+                <div class="header_product_desciption_right">
+                    <h2 id="desc-title">#</h2>
+                    <p id="desc-content">#</p>
+                </div>
+            </div>
+
+            <div class="header-bestseller-container">
+                <h1 class="bestseller-title">BestSeller</h1>
+
+                <div class="header-bestseller-content">
+                    <!-- LEFT: 6 món ăn -->
+                    <div class="header-bestseller-container-left header-bestseller-container-left-js">
+                        <!-- <div class="header-bestseller-container-left-item">
+                            <div class="bestseller-card">
+                                <img src="./assets/img/img-bestseller/diem_bung_tuoi_200_6.png" alt="Món 1"
+                                    class="bestseller-card-img">
+                                <div class="bestseller-card-title"><span>Món 1</span></div>
+                                <div class="bestseller-card-price"><span>120.000đ</span></div>
+                                <div class="bestseller-card-sales">
+                                    <div>★★★★★</div>
+                                    <span>Đã bán: 150</span>
+                                </div>
+                                <div class="bestseller-card-action">
+                                    <button class="bestseller-card-action-card">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- RIGHT: Video -->
+                    <div class="header-bestseller-container-right">
+                        <video src="./assets/video/gogi.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="layout-logo-menu-wrapper">
+            <img src="./assets/img/layout-logo-menu/logo.png" alt="logo-menu" class="defaultLayout-logo-menu">
+        </div>
+
+
+        <!-- BODY -->
+        <div class="body">
+            <!-- Your Best Choice Section -->
+            <div class="your-best-choice your-best-choice-js" id="your-best-choice">
+                <h2 class="best-choice-title">Your Best Choice</h2>
+                <div class="best-choice-list">
+                    <div class="best-choice-item">
+                        <img src="./assets/img/img-best-choice/best-choice-1.png" alt="Chuẩn vị nướng hạng">
+                        <p>CHUẨN VỊ NƯỚNG HÀNG</p>
+                    </div>
+                    <div class="best-choice-item">
+                        <img src="./assets/img/img-best-choice/best-choice-2.png" alt="Thực đơn đa dạng">
+                        <p>THỰC ĐƠN ĐA DẠNG</p>
+                    </div>
+                    <div class="best-choice-item">
+                        <img src="./assets/img/img-best-choice/best-choice-3.png" alt="Không gian ấm cúng">
+                        <p>KHÔNG GIAN ẤM CÚNG</p>
+                    </div>
+                    <div class="best-choice-item">
+                        <img src="./assets/img/img-best-choice/best-choice-4.png" alt="Phục vụ tận tình">
+                        <p>PHỤC VỤ TẬN TÌNH</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section" id="menu-section">
+                <!-- Sidebar Danh mục sản phẩm -->
+                <div class="category-sidebar">
+                    <h3><i class="fa fa-bars"></i> DANH MỤC SẢN PHẨM</h3>
+                    <ul>
+                        <li><a href="#">Gọi món</a></li>
+                        <li><a href="#">Buffet</a></li>
+                        <li><a href="#">Tất cả</a></li>
+                    </ul>
+                </div>
+
+                <!-- Khu vực sản phẩm nổi bật -->
+                <div class="featured-products">
+                    <div class="featured-header">
+                        <h3>SẢN PHẨM NỔI BẬT</h3>
+                        <input type="text" id="search-foods" placeholder="Search">
+                        <div class="sort-buttons">
+                            <button>Ngẫu nhiên</button>
+                            <button>Mới nhất</button>
+                            <button>Giá thấp</button>
+                            <button>Giá cao</button>
+                        </div>
+                        <span class="page-number">1/11</span>
+                    </div>
+
+                    <!-- Danh sách sản phẩm -->
+                    <div class="product-grid product-grid-js">
+                        <!-- Ví dụ 1 sản phẩm -->
+                        <!-- <div class="product-card">
+                            <i class="fa-solid fa-heart favourite-dish" id="favourite-dish"></i>
+                            <img src="./assets/img/img-dishes/dish1-salad-ca-hoi.png" alt="Salad Cá Hồi">
+                            <h4>Salad Cá Hồi</h4>
+                            <p class="type">LOẠI: Salad/Khai vị</p>
+                            <p class="price">Giá: 89.000₫</p>
+                            <div class="rating">★★★★★</div>
+                            <p class="sold">đã bán 6</p>
+                            <div class="product-card-button-container">
+                                <button class="btn-review">Xem đánh giá</button>
+                                <button class="btn-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div> -->
+                        <!-- Lặp lại cho các sản phẩm khác -->
+                    </div>
+
+                    <!-- Phân trang -->
+                    <div class="pagination pagination-js">
+                        <!-- <button>&lt;</button>
+                        <button class="active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>&gt;</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-section" id="media-section">
+                <!-- Div trái: Video -->
+                <div class="media-left">
+                    <iframe height="315" src="https://www.youtube.com/embed/LXIhxOQ8PLI" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Div phải: Hình ảnh -->
+                <div class="media-right">
+                    <div class="big-image">
+                        <img src="./assets/img/img-media/media1.jpg" alt="Hình ảnh lớn">
+                    </div>
+                    <div class="small-images">
+                        <img src="./assets/img/img-media/media2.jpg" alt="Hình nhỏ 1">
+                        <img src="./assets/img/img-media/media3.jpg" alt="Hình nhỏ 2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="intro-section">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2>Quán Thịt Nướng Hàn Quốc</h2>
+                        <p>
+                            GoGi House – Quán thịt nướng Hàn Quốc Ngon Số 1 sẽ đưa bạn ghé đến những quán thịt nướng tại
+                            thành phố Seoul đã tạo nên danh tiếng cho nền ẩm thực xứ kim chi. Nếu đã một lần thưởng thức
+                            thịt nướng tại GoGi House, bạn sẽ không thể quên được hương vị “ngất ngây” của những món
+                            sườn non bò Mỹ, nạc vai bò Mỹ, dẻ sườn tươi…. khi hòa quyện vào với các loại gia vị đặc
+                            trưng xứ Hàn đã trở nên hấp dẫn đến thế nào. Ngoài ra, những món ăn kèm không thể bỏ qua như
+                            cơm trộn, mỳ lạnh, canh Kimchi và các loại lẩu cũng sẽ làm bạn ấn tượng thêm về nền ẩm thực
+                            Hàn Quốc.
+                        </p>
+                    </div>
+                    <div class="intro-images">
+                        <img src="./assets/img/img-intro/intro1.jpg" alt="Thịt nướng" class="intro-img">
+                        <img src="./assets/img/img-intro/intro2.jpg" alt="Mỳ lạnh" class="intro-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <div class="stats-background">
+                    <img src="./assets/img/img-stats/stats1.jpg" alt="Hình nhà hàng">
+                    <div class="stats-overlay">
+                        <div class="stat-item">
+                            <h3>40+</h3>
+                            <p>Nhà Hàng</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>120+</h3>
+                            <p>Món Ăn</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>1000+</h3>
+                            <p>Nhân Viên</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100.000+</h3>
+                            <p>Lượt Khách</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-section">
+                <h2 class="section-title">Blog & Tips Ẩm Thực</h2>
+                <div class="blog-content">
+                    <div class="blog-slider">
+                        <!-- Slider placeholder -->
+                        <div class="blog-post blog-post-active">
+                            <img src="./assets/img/img-blog/blog1.jpg" alt="Blog 1">
+                        </div>
+                        <div class="blog-post">
+                            <img src="./assets/img/img-blog/blog2.jpg" alt="Blog 2">
+                        </div>
+                        <div class="blog-post">
+                            <img src="./assets/img/img-blog/blog3.jpg" alt="Blog 3">
+                        </div>
+                        <div class="blog-post">
+                            <img src="./assets/img/img-blog/blog4.jpg" alt="Blog 4">
+                        </div>
+                    </div>
+                    <div class="food-tips">
+                        <h4>Tips Ẩm Thực</h4>
+                        <h2>[MN] KING BBQ BUFFET 179K – DUY NHẤT TẠI 11 TỈNH MIỀN NAM</h2>
+                        <p>18 MARCH</p>
+                        <p>🔥 Chào các đồng nướng! Tất cả mọi người đã sẵn sàng cho một cơn sốt ẩm thực tại King BBQ
+                            chưa nào? MENU BUFFET MỚI – CHỈ 179.000 VNĐ Tặng thêm 01 phần lẩu Tokbokki cực “HOT” Buffet
+                            179k tại King BBQ cũng là một lựa chọn tuyệt vời cho mọi dịp họp mặt, […]</p>
+                        <button>READ MORE</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sponsor-download">
+                <!-- Bên trái: Logo nhà tài trợ -->
+                <div class="sponsor">
+                    <!-- 1 -->
+                    <div class="sponsor-item">
+                        <h2 class="sponsor-name">HOTPOT</h2>
+                        <div class="sponsor-logos">
+                            <ul>
+                                <li>
+                                    <a href="https://ashima.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-hotpot/hotpot_ashima.svg"
+                                            class="image-gray" alt="ashima" title="ashima" style="height: 50px;"></a>
+                                </li>
+                                <li>
+                                    <a href="https://kichi.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-hotpot/hotpot_kichi.svg" class="image-gray"
+                                            alt="kichi" title="kichi" style="height: 50px;"></a>
+                                </li>
+                                <li>
+                                    <a href="https://manwah.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-hotpot/manwah-list.svg" class="image-gray"
+                                            alt="manwah" title="manwah" style="height: 50px;"></a>
+                                </li>
+                                <li>
+                                    <a href="https://hutong.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-hotpot/hotpot_hutong.svg"
+                                            class="image-gray" alt="hutong" title="hutong" style="height: 50px;"></a>
+                                </li>
+                                <li>
+                                    <a href="https://ktop.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-hotpot/hotpot_ktop.svg" class="image-gray"
+                                            alt="ktop" title="ktop" style="height: 50px;"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="sponsor-item">
+                        <h2 class="sponsor-name">BBQ</h2>
+                        <div class="sponsor-logos">
+                            <ul>
+                                <li>
+                                    <a href="https://sumoyakiniku.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-bbq/bbq_sumo.svg" class="image-gray"
+                                            alt="sumo" title="sumo" style="height: 50px;"></a>
+                                </li>
+                                <li>
+                                    <a href="https://gogi.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-bbq/gogi-list.svg" class="image-gray"
+                                            alt="gogi house" title="gogi house" style="height: 50px;"></a>
+                                </li>
+                                <li>
+                                    <a href="https://gogisteak.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-bbq/bbq_gogisteak.svg" class="image-gray"
+                                            alt="gogi steak" title="gogi steak" style="height: 50px;"></a>
+                                </li>
+                                <li>
+                                    <a href="https://kpub.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-bbq/kpub-list.jpg" class="image-gray"
+                                            alt="kpub" title="kpub" style="height: 50px;"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="sponsor-item">
+                        <h2 class="sponsor-name">JAPANESE</h2>
+                        <div class="sponsor-logos">
+                            <ul>
+                                <li>
+                                    <a href="https://isushi.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-japanese/japan_isushi.svg"
+                                            class="image-gray" alt="isushi" title="isushi" style="height: 50px;"></a>
+                                </li>
+                                <li>
+                                    <a href="https://shogun.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-japanese/japan_shogun.svg"
+                                            class="image-gray" alt="shogun" title="shogun" style="height: 50px;"></a>
+                                </li>
+                                <li>
+                                    <a href="https://daruma.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-japanese/japan_daruma.svg"
+                                            class="image-gray" alt="daruma" title="daruma" style="height: 50px;"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="sponsor-item">
+                        <h2 class="sponsor-name">STEAKHOUSE</h2>
+                        <div class="sponsor-logos">
+                            <ul>
+                                <li>
+                                    <a href="https://woomastervn.com/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-steakhouse/woomaster.svg"
+                                            class="image-gray" alt="woomaster" title="woomaster"
+                                            style="height: 50px;"></a>
+                                </li>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="sponsor-item">
+                        <h2 class="sponsor-name">WESTERN</h2>
+                        <div class="sponsor-logos">
+                            <ul>
+                                <li>
+                                    <a href="https://cowboyjacks.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-western/wester_cowboy_jack.svg"
+                                            class="image-gray" alt="cowboy jack saloon" title="cowboy jack saloon"
+                                            style="height: 50px;"></a>
+                                </li>
+                                <li>
+                                    <a href="https://vuvuzela.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-western/vuvu.svg" class="image-gray"
+                                            alt="vuvuzela" title="vuvuzela" style="height: 50px;"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/unionpizzavn" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-western/union_pizza.svg" class="image-gray"
+                                            alt="union_pizza" title="union_pizza" style="height: 50px;"></a>
+                                </li>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="sponsor-item">
+                        <h2 class="sponsor-name">DELIVERY</h2>
+                        <div class="sponsor-logos">
+                            <ul>
+                                <li>
+                                    <a href="https://icook.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-delivery/download.png" class="image-gray"
+                                            alt="icook" title="icook" style="height: 50px;"></a>
+                                </li>
+                                <li>
+                                    <a href="https://gdeli.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/img-delivery/gdeli.svg" class="image-gray"
+                                            alt="gdeli" title="gdeli" style="height: 50px;"></a>
+                                </li>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="sponsor-item">
+                        <h2 class="sponsor-name">OTHERS</h2>
+                        <div class="sponsor-logos">
+                            <ul>
+                                <li>
+                                    <a href="https://37street.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/ing-others/other_37_street.svg"
+                                            class="image-gray" alt="37th street" title="37th street"
+                                            style="height: 50px;"></a>
+                                </li>
+                                <li>
+                                    <a href="https://hangcuon.com.vn/" target="_blank"><img
+                                            src="/assets/img/img-sponsor/ing-others/hangcuon.svg" class="image-gray"
+                                            alt="hangcuon" title="hangcuon" style="height: 50px;"></a>
+                                </li>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bên phải: Tải app và mạng xã hội -->
+                <div class="app-social">
+                    <h2>Tải App Golden SpoonS</h2>
+
+                    <div class="app-links">
+                        <div class="app-links-img">
+                            <a class="cursor-pointer"
+                                href="https://goldengate.onelink.me/8Isw?pid=Website%20Brand&amp;c=Website_Brand_GogiHouse&amp;af_adset=Gogi%20House&amp;af_ad=Banner%20Footer"
+                                target="_blank" rel="noreferrer"><img
+                                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkwIiBoZWlnaHQ9IjU4IiB2aWV3Qm94PSIwIDAgMTkwIDU4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3Qgd2lkdGg9IjE5MCIgaGVpZ2h0PSI1OCIgZmlsbD0idXJsKCNwYXR0ZXJuMCkiLz4KPGRlZnM+CjxwYXR0ZXJuIGlkPSJwYXR0ZXJuMCIgcGF0dGVybkNvbnRlbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgo8dXNlIHhsaW5rOmhyZWY9IiNpbWFnZTBfMTIwMl8zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC0xLjEzMjY1KSBzY2FsZSgwLjAwMzkwNjI1IDAuMDEyNzU1MSkiLz4KPC9wYXR0ZXJuPgo8aW1hZ2UgaWQ9ImltYWdlMF8xMjAyXzMiIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQVFBQUFBRUFDQVlBQUFCY2NxaG1BQUFBQVhOU1IwSUFyczRjNlFBQUpKRkpSRUZVZUFIdG5RZTBKRVgxL3dzUUU2SUNKb3lMQVZGWmM4YXdLR0pFUUJGUjlJQlpWMFJGVndYRFFVVUZNNmpyb29DWWpnbkJqR0lBRXlaTXJHRlZZTTJZOHlLSzJ2Lzd1VDl1LzZ0cmV1YjF2TmZ6WnQ3Yjd6Mm5wM3U2cTZ1clAxMTFLOTJxU2traUFpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpSWdBaUlnQWlJZ0FpS3dCQWhzTVVjWXQ3YnJjN21ad3d0ZEZnRVJtQ0tCeXA1OXliRG50eVh1SGMzeHZyYnRhZHN1dG0xam0wUUVSR0JwRXRoa3dkNWcyeG0ybldiYmhiWU5sUVB0eXZtMm9UVzBpWUhpd1BLS0E2UnQwbmd0VzlWSEthMng0N1cyYlorZDA2RUlpTUR5SWJDZHZRcWwrNHRzTzV2WENnV3dqeDBmbi8zbm1rUUVSR0Q1RWFEYXY3dHQ2MjNid0o5dGJVTWI3R3FiUkFSRVlQTWdnQUxZYlV2NzJkczJKZjdONDZQckxVVWdDS3kwZzcycEFoeG4yd3JiSkNJZ0Fwc1hnUjJvQXZ6RE5uWDFiVjRmWG04ckFoRFloQUtncTBjaUFpS3dHUktnRFVBaUFpS3dtUktRQXRoTVA3eGVXd1FnSUFXZ2VDQUNtekVCS1lETitPUHIxVVdBYnNBamx5cUdhMS83MnVuQUF3OU1oeHh5U05wNTU1M1RsNy84NWFYNktqTVI3cHZkN0dicDFyZStkYnJvb292U1AvNUI1OURpeTVaYmJwbXVjSVVycEMyMjJDTDk5Ny8vWGZ3QUxPQ0oxN3ptTmROZDduS1hkTG5MWFM3OTRROS9XSUJQaTN2cmtodndZUW0vZXYzclgxLzkrdGUvcmtMZStjNTNUdVU5Ym5yVG0xWUhIM3h3dFhyMTZ1clFRdyt0bnZhMHAvbi91OTcxcnRYV1cyODlsVEJaOUpuWGM5LzczdmRXLy9yWHY2cG5Qdk9aODdwL3ZzL043M3Y0d3g5ZVdlS3BQdnpoRDA4dERIbDR4amwrK3RPZjd2emU5NzczTFptd1g4WmVjRW5KL2U5Ly8yU0ozM1A4UE9BLy8vblA4NytMZHZ6RUp6NHhIWGJZWWY2OHlMSEl2WkFOR3pha2RldldwVGU4NFEzK2Y5Wi9MbnZaeXlhMnkxeG1ldEdDM0grSEhYWkkyMjNIdUpYWkZGUHNhZnZ0dDArLy9lMXZHd0dFRy93b0FTd1ZXVkp0QUh2dHRWZDYxN3ZlTlpENGdYM09PZWRNaFhra2xnOTg0QVBwSmplNVNkcDExMTNUQVFjY2tENzR3USttWFhiWkpSMTMzSEhwNktPUG5rcll4bjJvbGFiOGx0aVBlMzhmN3VQWi8vdmYvL3J3cm5jLzl0aGpqL1N0YjMwckhYdnNzUU4rUjloalArQmdCazlNVDlXUENZUDY2WnZmL0diWHZPV3R2L3psTDlQWlovdm94dkxTeFAvSHg3YnFTTnE0Y2FNL2o1d2ZoZkNzWnowckhYUE1NY21xQmVrakgvbElheGgzMm1tbmRMM3JYUy85K2M5L1R0Ly8vdmRUSHZFcFNWenhpbGRNUElONmVRajE1TXRmL3ZMcDRvc3ZicmpuM0ZaYmJaWCsvZTkvcDBzdXVjVHIwZVNvLy9uUGYvemNIZTk0eDNTSE85d2gvZTUzdjBzZit0Q0gzRTM0MldXL3pUYmJwRnZlOHBiK3pCLzg0QWZwNzMvL2UrdHRLRVdVMzlXdWRyWDAxNy8rTlgzdmU5OGIrU3h5VGQ2Sjl5SGM4NUhnR00rTDBsanVWNVJ1WUxsaXhZcDBuL3ZjeDlzWlB2bkpUeWErMzF6Qy9mQkR5Zi9pRjcvd2I4UDNJdHk1Ukp6Z0dUZTR3UTNTVDM3eWs1SCt4L2VNNzVUN3RSakhNMTlmTVVDVmZTVGoyaTRubkhEQzFONkJ0Z2pFaXZtdFlmamlGNy9vMThzd1dtTmJkY1laWjFRV0dTdUxSSlZGL01wS01kV2VlKzVaKzhON24zbm1tVjRuM20yMzNlcnpMM25KUzZvLy92R1BqYnI2Ylc1ekcyOFQ0ZndqSHZFSWQzdVZxMXlsTXVWWWZlRUxYNmlPT3Vvb3I1OFNHRXNjbFRXWVZoWkJhejh0b2xWV2F2R3dQdnZaejI2Y3R3UmQ4VXlyWnZtOTNHOEpvRnF6WmszREhYNVlvcXBNQWZyNzhGNjBLWHozdTk5dHZCZnUyRXp4Vlc5NXkxdmMzNy84NVMvVkp6N3hDUThuZ1RqcnJMTUcvSTc3OHIwbHh1cjAwMCt2T1pyeXF5eUhycXlxT0hEL3h6NzJNZWZ4bk9jOHA3cnd3Z3Y5WGZtNTRJSUxXc09YUDRmanozNzJzdzJHbXpadHF0YXZYMTgveDZxQzdxY3AxK3FWcjN4bHhYVkwxUDZzeHo3MnNiVzczRjlyd1Bid1duWEN2OStwcDU1YThVNjVtd2tmejYvQmFNS0JhZ0NnWVFpUWJXSTVaN1Z5NWNxRys4VU0yMXdLNE1namovUmdmLzNyWDY4c2QvWndYdi82MTY5Ky9PTWYrM25MOWFzM3Z2R05udmhJTUVRRXk2bnI5M25OYTE3ajdvNDQ0Z2cvaDFLdzBvNmYrL2pIUDE2N0l6RWlmL3JUbjZyclhPYzZmdjZxVjcxcVphMzUxVC8vK1UrUHVOeUhRZ3FXSkw2Y1Zac0M0SG52ZWM5NzNHK1V5MGtublZTOTlhMXZkYVZFZUoveGpHYzAvTmgzMzMycjczem5POVdKSjU1WVdURzUrdVkzdituM2J0eTRzYko2YysxMjIyMjNyYjd4alcvNHRWLzk2bGVlaUsxVVVTY3dGRjhldHJiamExM3JXaFgzSUNnMGxQQ25QLzFwLzA5RFlxNDB1UjlGaU1DRCt6NzFxVTlWVm1Md2M0U1RkMjE3VHB5enFwd3JNMjdnL285KzlLUE9JcTZIQWtDWm9Yakp0Q3ozZC85NVJ4UmV1R1VmY1lNR1R4UUV2RkN1aE1WS2ZnMjMrWDA5SDgrK0FoaVYrL05SZWdZeWxuOXpLWUNuUHZXcEhnRis5S01mMVIvVjJnWDhISkhvNmxlL2V2MDhxK0w0ZVNLRUZmLzkvS3BWcTd5RVFPTGtQVzk0d3h0V1Z2U3VVSHdrS2hJNTU0bU1DSkU2ZUhBdElqamhERCt0WWRMZGZ1VXJYNm5QY1UrYkF0aG5uMzA4VWxveHQ3STJtTnJ2L2ZmZjMzTjVjbElTWWp5VForUUppVEJZbGNPZnQ5OSsrOVh1VUdnSUN2REdONzZ4bnlmU2svTWpYUlJBc0NmUmgzTGwrWlNzRU9KTmhJczlmaUtmKzl6bktxdk8rTFhIUE9ZeC9uNG9UdGptN3R1T3liRVJFbTk1UFJUQXozNzJzK29XdDdpRlh5ZlJuMy8rK1g3UFFRY2RWTjlqVlFrdklSQ1czQityT3JyYm5IVit2ZS9qbVc4RXBHNTMyOXZlMXQ1N1VDd0hUQzk2MFlzR0w4elFtV2dScG01TEhjOGlhTnA5OTkwOWhGYmNTNy8vL2UvcjBGcXVtYXpJbktpclJ5dTQ1ZGhlaDZUZWlaaENTRmU2MHBXU1JSeXZlOUlvUlRzQjl5Q1dnSHdmUHp3UFAybTBzcGpscHkxaCtKNzJBZG9NUnNuOTduYy9yNTkvN1d0ZlM2WmthcWVubkhLSzErMHQ4YWQ3M3ZPZTlYbWVZWWsrV1k2V3JQVGlqYURSVUhxTmExekQzUkVtNnQrSWxVTFNlZWVkNThmVXpkL3hqbmY0TVc1R0NlRzJITjZkV0tta3RobmcrU2VmZkxLZnY5M3RicGZvbXkvRnVqdVRGYy85dEZVZmtwVnNFaTM3Vm1VcW5RNzhEMTZ4SDNCZ0oyZ2twRDBIb2EzQXFrQitqTjFLeUlNZTlDRC9idGhiV1BkaHNxN1haS1dwdWdmQmxGRTRuZWgrNWhzQnJYZy8wUEJuUmMvMDduZS9POUVGUjRQWExBdU5ZUWhkUm9TVmlHYTV2cCtMaU85LzdPZUhQL3loUjB3U0VJbmNjaVdQMkVSU0swa2tLOXFudTkzdGJ1NmNSa1dVeWdNZitNRDB0Ny85elJ2Y1NFQjVJZzEvYVJETERYdWkwV3F1Uk1iOU5PUWhWay8yZmZ6d0RXaDh4WEFvRWpiWHJQMGh2ZnpsTC9ld2NnOE5qcUVBckdUZ3Q4T0FoSWtmdkhNdVhSc0JVWHB3d24zWkJXd2xLL2NTNVV1aWkrNjZlRityQXRTUFJHR2dJUEZ2VXNKM1FZSUR4MlJzQ0QxYmJMbkFoUWJkeFpDWlZ3RDBDWWUyQll3MXVuaXVndGFmZGJGNmJwM1RXWEhiZzB1RUl6R1NBQ0p4eFh0d2praExCQ1ZTaGxqaldIcktVNTZTSHZDQUI3Z0NJTWN5WXhOWEppZ0dFaUtKaTF3bkluL2NHL3RJZlB5UGhCRFhSdTBqOHZJZFNvbFNTdVNtS0NpNlBVbE1qMzcwbzcwck5MN1p6VzkrOC9KMi93K1BYRkFPWFFRK2NDSnVSRGppUGtvbENJcVBYb0ZTY2hibHRhNy95M0NQdXErTmR5ZzZ2aU9scVZBTytFdjRySDFrbEplOVhmcy9sZHliZCtON3hNdTJBUXFmckxFc25YYmFhZW40NDQvMy9uVzZZY3JFVHlUbzQ2UEdNK2V6cDNpZkM0blpHc3ZTQ3VzS29vdkplZ0g4TXU2Ky9lMXYrekhGNjF5ZThJUW5KTHJhNkViTVRVbXQ3cHFzWHVudlQ1Y2hOZy9rNHBRTXlBV2pPUDJsTDMycDBTMlkrejNmWTRyK3lKM3ZmR2QvbC9DSHFvZjFQSGozcERWdyt1bmIzLzcycnRUbzlpSmk4NjRZekpSRmF5SS91VExmN0ZhM3VsVjQ2WHU2R1pHNUVoaWxLWlFkZmxDY3p1VnhqM3VjLzdVMmt2VFRuLzQwdjdUZ1k1UUtRZ2x0SVdJTnBYNDdtUUFLZ0dvSkc5eXMwYld1Rmkza0dWM3VYZlFTQUluVnVycTgzaGg5eGVRU1JIRHFUdFJQODJJaDl2MmxqVDlGNlB2ZTk3NGVLZkdEU0VhQ29DaEluek1KaGh3WGZ4ZExpTWpVNDZoWGsraEpsT3pwMzdkdXRVWkVYTHQyYlNMeDMvdmU5L1ljMHhydVBER1pLYkVYYWJGM2lJaEcrRWt3MXJEbHBRQWlQUFYveEZxV1hWbmdGNG10cmZpUGNoMm1ZTXZ6NVgrZWNiTFZwMUZNdkIrS2w3Q2pwRjd3Z2hkNFRzODVtQ044UTBvTVpoNmRudmU4NS9uL0p6LzV5VjRkSUVGYjY3aTc0NWl3cmxxMXltMGthT2V3bG05djYzbklReDdpYnRyQzRoZXluemU5NlUzTzBSclhuQVh4aDNqeDBJYysxSGx3UFk4RHcvemsvTEJyMmVQOGtIZEVDQ2ZmRm1WdTNZdCtMbjVLdjhyL3VNTk9oTG8vY1FBRllBMnc3cC8xRUhsWXlQQVdTeHF0a1BiUWlmMjNZbUZGZHhoOXRjT0VWbXY2YXc4MiszckwzZXF3bUJGR3RmZmVlMWZXU05RWUE5RG1EOTA4ZEF2UndtdndhejhtOFc3UkVsMkdnKzQzV3FFdGtyYyszOW92dk1zdnY0K1c2T2MvLy9tdDd1blhocHZWOXlzemlxcmQwR2R2eXNLN3BXQ1V2eVA4NkpLaTE4QktKUFUxVXhoK0Q5MTFWdlNzejlNQ2pWOW13RlNmd3o5c0RNNDk5OXc4cU83T0ltN2RtaDdQcFNzdUJMK3dBYUFyakxCakl4RHVMQ053R3dBcnludHJPUDNwak8zZyszTHV6QTdkZ1BqRk42YnJOQmQ2U0Y3ODRoZlh6NHBuNGlkaEloN0dPYmhZb3ZiZUV0NHp6Zy9iWTFzUjNaYzhNKytLWlF3Ri9rZVBUZmpCT0JYT205SnMrRytOd1pVcHp6em9ma3p2VVBrdHc2Kys5MXRjNnFIdEppYzB4RkEzUkd1MmFjTmhUNlp1UzNHWHVoNDlBZFpkVkxjSERMdW5QRS91U3VzcXhlcEpDTVZlY2gzcXZlVE81SUFVT3ltQmxJMTg1Zk41SCtyMVZCZCs4NXZmSk92T0docE9TazRQZnZDRHZhVERPMFhPUmhHU1hJVFc1dElhTXU3aHVlUzRVVTJoeEVRUm5rWkdNMjZwaTl0M3V0T2RFcTNQRlB2TFJqL2VqKzlIN3M3MzRGbGxqd1BQZ1FFTmdkVDVyZnZMVGJkcGphZnFRcmpMT2prOUl2UWlFRmJycC9mU0RjK2g4ZkR6bi84OFhzNHBOS2hSRGFEdXozMmYrY3huNmxiNC9PWjczT01lM2lqSWM4THlqN28zM3c4clA4SVhiUjc1ZmVVeDhaazJEcXBmVkx2b2pVSUlCd3lwZWtUVmlmUEVFY3pFaWN0VWozS2hzWSt3MDh0RFdQaU9sUEJnRjk4NGR6K0o0NFpXc2dmMCtwOCtYaXpjcGltV0VDdjdNTDIrVjkrYzVGKy84VTQ4Ty9QczdIRHNCR1M1VTJXYWNKcHB2MzYyNWNwVHRSaFVoSnhjUEJQYitiT2RhQy9BYTEvNzJ0cEF4VDdTVklVaUh0MVVFaEVRZ1NhQnNYTjJ1MzNPZTdBSnB6Rm5Gb1NHbGk0TlBGM2VTMjdtL3ZaaXRLUVk5UjlZYXdpcXJBRm5GdEsrRDdxeEJwZzVGWllpYmYveFFFeVhCTlArQTNtdmU5MXJKbkovdXN6eXJpZEZ5UDYvdFpndWJhWVRhUU93RVdUZXJXS1JZNnFDRVF0ZGF4SVJFSUYyQXIwckFQcUJiVUxNOXFjdDRsbjZnMS8zdXRjdDRoUDFxSEVJWUE5QzN6L3hSVEk5QXIyYkFtUEtlTjNyWG5kNmIzVHBrekZVd1NCaldzTGdIZXpuclNIRWcwQ0V4d2prWlM5N1dYMXVXbUdiMW5NeGlNRnMyY2JLcHgxMzNOSE5wczFDem8yRE1MRTFhME0zQmVlN0JiZHBoWFZ6ZW02dkRXU1lOeko1eExTbG5OYktQbWl2N3puS1A4dzRMUklQSUtCTllrVXhEZGNvZjViTE5XWkFzc2xjM2VSM0FFcHhnbG1IRHNvbXpsZ3VER2IxUFhvdmZ6RTBNeWJCc0plZW11UURpaFk3RUF4MmFpc0ZNVHlZYWMwM0o4SEVsUUZlTE9EU1pjdzk1clhESmh2TnVWRjFvQW9oV1JpQjNxc0FqSWFiQldHazFyU0VZaTUyM1phNStaYlhjN0U3WjdUZjVpQU1BN2FCTUlrWm5YTmhGS05Oa2VaRmZ6SUxKaFRCanA0NUJ4Z21qRTErbTJETXhjbzdqR05nREFFY21SaEdNbjhDdlN1QStRZWwzenNac2pvTllVSUxTZ0FJZzI4WTJHSGRvajU1QitlWXo0QUJQUGw0Zjg0dlIzbnVjNS9yTXdiRnV6SFE1cVV2ZmFsUEE4WkFwQkFVSkVyZ1lROTdXS0tVRkJPTXhQWFkwNnZEVUY4VUFSTFRoOFYxN2VkSG9OZTZzWDNFb2xZM25iOVBldEtUZW4wdlE5dkpQNGJheG5CbmkvQ1ZUZGxWMlVpL0dvS044S29lK2NoSGR2S3I2ek5uMFIzRGpCbHVuTXV3cWRPN2hwOXB1WE94ZVFxV1BjZXViT2JycnZjMkFJWjd4blJIRnFpcFNVeVN1ZGdCb1BnZjAxb3hMQmc3aEpqOWhiRFFHN0E1dEFOUXlxRkhLSVRTVUV4R0d1ZkczWmZ4S3VZMkhOY2YzUE1kcUtibDFiUDUrSlBmdzNkbnNwcXVwVStlVFJnSXk3U2s5eXFBVFJQdGpUaU1PWittTUhrbWpVNWR4bmYzRlU0YXBhTDRqNTkwYTFscHdHYzBvdTRmUXZmZ1hHRWpjcUFvcUNOenpEanhHR1BPZjhhUVU3V0krZStZVDRDeC9jeE9ZN2xrUEdwZ3p5U2V6RVBBV0hNU0pmTU54andCVFBIRm5BTTN1dEdOZkZKS0d1TVl3ODRVVlRHYno0Q0hRMDZRR1BMR1lDSTU0UjVYVUtpTTQ2ZTdzSndwMThhYitEajc4SnN3TWhQeHNISDBLQ1htS21BMllScHBTYWdvRmRneHN3OVRjbzFxUEtidGdlN2RFSjVGZHpQK1V0M2hlN0VTRU4rQTU3UUo4eUxRSU1xOEFjd3JBQ1BtaUtUcmsza0ZtQkpzMVBkcjgzT2g1M290UmxuRXJ1ZEJ6NHRyMHpobVRuNkRzMmliUlpDR0NYUVVVVzNDaTBiWEtMUERtRUlZR2E3b1NyVEU2UXQ1TUxzUTc0SmZYLzNxVjMxTy9wS3BSV2FmVjMvVXdDZldKQWcvbVgySlJVU1k1Y2JxMXo3YlVPa24vNW5YM3ViWkd4bmVrck5sQUkzVmQvQ25YQjJwdktmdFA0dW1kQlZtQmpJbDNCcE9tNktzc2hMWlNLL29ncVNhUWh4dUM0c2wzTWI5TE9ZQk8yYTV5b1dWZ2RydVAvend3MzNCa054dGZreThPTk5tTFlvMUJkcjhtTUM1L2hNSUx6RUxRbDg4Q3pOTUFGcXJuNjkrOWF2cjF6Wkx4SHFGSHVyRDVkUlBST3hSNGVJZXBvWUtZVlVieTUzclJUYmlmTnVlOTdZWmxGcjlmOFVyWGxIZlFoc0ZZeVc2RE54aVpHYzVWZGlvOEZ0dTc0dVUxQSt6QTZacVl3bjFVZmVWMXhhcUFLd2tVcTlzbElkbDFESHhOMSt3SmNKa3BidkdiVllhOEpXU0dpZnRUNmtBcklUaUt3aVY3dUNQRWk1SHpiSll5aUxHMi80VkFPdWl6WXF3YXN3d2pSNGZ0bzg5RVo3NTcwTHl1ZUx3djV3N3NKeVByd3dEL3NXeVd2akpVbE1zTHhWQ0ltY09Qd3hzY0VmdWtRc3JFZG4wWFFPSnpSWlNxWjFoc0VWa0MySCtRT3VDcTk3KzlyZjdFbHRFemx5SXNGR3FLY1BiOXQrbTlob29xVkQ2WU01SEVsUGJQZVU1NXRsakRqNG1sbUhPeEZ5WWE1RFNFTmR3Zzc5d3kvMTQyOXZlbHQvaURiU3NRUWdINWw5OC8vdmY3M01tTmh6Wkg5am0vbkJzVlpHR001dXR1bkZ2SkdpclNqVHU1VG01b0FqTlROMkhxRk5TV21YelJ2SzhYRkFpNWJ1VTRlbnBmLzhLZ0p5SzR1aXNDTVZucXlzM1BrcFA4R28vaVJ4ODJCQmJFYmkreHJNbzhrZnZBRzVJZlBrYWdHVjQrUGhFN2xLSVpFeDRTZEV6N3FHMGNMQk5vc3A2ZUxuWTNIZ0RrWWhpYUp2WW5JR1Z6ZnhiKzRuZlpybzdFQWFLeWFPcUdCR20yQS9Md1dQaVQ0clI1TkxodnR6RGdXSTlHOG84RjNwNjh1dGxna0ZaNVlxUnNGdmRmT0JaV0sraVVITWgvdEtqbFlmSGJCQnlKN1hmS0NicjNxeFk4SlY0dGlLejltUUNWNTRiUWh5dzJZQWIvdklNU2dsVy93OW43dmNpV1VUMnJ3Q0luQ1hRK3MybWRFQnhPbCtiTHYrd2ZSemJhamoxbS9IQjgwaUEvMFJ5Y3VWY2JGekFRRVNJc0JDWnJZRXBkKzVyQkpKemhadHkvL2pIUDc2aGVJbjhMS3lhdTZNdVhBcEYzbUdKa1Bjb3Z5VWxoTnpQVWNlOEI2V2ZZUmtDM2FMTU9OeWxqU0hXL0l2dzg3N0RubTJUYmZyS3ZlRVdGdVZDcHZtOVpGcTVBdWMrRkU3dWhua2xTNkdVeEwyNXUvdzQxb0dNKytqS3pLL254NndLbkpkeStDNzU5UWtkOTY4QUNDaFRJYythb0gwSjE3RElQbC9BUlBLOHVFNUVSYU9YL3RrODlRMGtyTlJiNWxweEQvY3p0WGt1S0JBYUI4Tk51Vys3aHlKdTdvNmxzWE9oU0c0OUNnMDN1WHVPajd4MGhlTzREN3NHaXE2bHUxSC95VTF6UnVGWDdGRUVGSjFIK1ZzcWdGSFZFZDRwei8ydGxiOHhCWHBiV0NsMjUwSml0SFVuNnZkc1V3Qm1pVmhmTC8yazZwbTM0L0NPbEhoS2QvbC80a1FJQzY5T3VpMWcvSDRaQzIwWHNUck5UTmdENUdHMWhPL2RaaGJwODlNTFBxWkxKOVlBeERPNmMrd2pEdmpMZW41MEM0YXcyQWJUUlErVDBnK3JFalR1TCsvRFBRdUk1TUwwM0x4M1NPa25acm1XMDhUbDFqMkxWdVI5N3Bqc01ySnZIQ0UrMFAxcDgvaTdQVUJwN1dmS0sxbHB4YWN2dDJMME9GNjN1c1ZVMkpScmZjMVdYSzY3Tyt1VHhRRmRjTGxZU1hib3dyUzRvN3VSTHI5aEF2dTg2eEtHZEJsYVNkU3RIckY4ekRlNk5lbEtEcm55bGEvc0p0THhmeEw3M3UwQUlwQVlmYkJXSGYzT3N5VFdhTmFhT0JjU1J2cXFUZHU3RnlRd1c4REU1N3JQSXlEbjgzNXhIR1AyU244K2R2RmRCRHY1dVlRaHgwVE1lRFltdHZSM0QrdkhaOTZFUEhHMytjOGFBYXhpVEI4Mmd2RUsvZDNqaWxVRGtuVTMrb1lDc1J6Yys4dmhFTUpjRXF3cXhGb09DNUU4NFZsSm9HR01OY3hmVmhiQzlpSENBOE5SRThtaXhKaS9mNWhnYjVGL2M5WUFzRjZZWWM0OVhzWjN3eEgzZGpVcUd1cnBIQmNtcGdESTZiRFZuaVVGZ0pGSHFlWG40RFBuWlhJdUZFQUkvOGw5dWdyR0pSaVU5Q1ZXSjIwb0FDSmRIZ25uOHh3U2JyNjZNSDZFd3B1UGY5eURnVkVZR2JHR0lva2xoSnp3aFM5OFlhZFJnWEZQdWMvWDdrUEI1Y3V3bDI3alArL0lTc3VoQURoUExqeE1LRWxhdThHd3k0MVZrM0ZFM0dEcktwUUc4aEpCMS92R2NUY3hCVUFnV0RlT3RlRjIzbm5uY2NJME1iY25ubmppbkxuZHVBL0hlbzRKTHVZcnJKcERrUmRydEQ2RUNKTkhNa29lbEFnV0l1UktaVVJjcUo4Um5yUE9PaXNkY3NnaHllcmY5WkxZVEJaQ1NXRFlxTUM0ZHhMN25CMytvL3ptS3lVelNsdVVHTXBudFBtUEc1U0xHUysxWGU3dDNFUVZBTG1SV1ZiNTFsdUk1K2tSWnJtVEdJYUwrV2RlVEdOWlo4eEtLU2FYUXFJaFJ5R0hpM281dHVNc0QxYXVlRnpleS84dUVZZGx4dktJUjVGMnJpSisyN1B5YytUMitSTGNLSlUraDFzelhvSUZScU5kQVRaUjNjakRNYzV4UHFjQXBTQTR6eVc4SS9NUjVHSTlPdm5mc1k3TGFoZnhndmpTNVR2R2cvcFN0T0ZmdVIrTXBhV0xCZjVubFZNYWQ3RE5uNWFneFk4NjZxaUpqQXZnZzRhUU1LeVB2bDRyTHM2WGUyc1pib3lSWjV4QUZ3VmdMZVNsVndQL1kzbnR1TURZakxMQkxhNnh4MDhVQnZYa1lVTEN6QlVBMWJ0UmRkOWgvZ3c3VHlUdlU2SHdISmFWRCtIOUtLbFJ5aGdsTVVZajNQQ2VjNjN2R0c3YjlyU2R3RFVVOG9vVksveTQ3MGJvdG1kM1BmZi9tMG03M2pHbU94SWZBeVg2L3NEakJJTkJIclJDOXkwclY2NU1lWUpqTWROeUtmTzJaN0o0WlM3MEl1VDF6dnhhZmt4MUlTSlRmajZPeWIxcytISDg5VDA1NjZoY2hFRXhUTEl4U2g3MXFFYzFTalFvRmJONkhIWExXTmZJOGZNWmxJZ3pESDRxcFh5UFVXMGJNTTdkNTZXdTB0LzR2Ly8rKzhlaDcxbEFsS1hMNXlzb2V1SkV5RTQyNlFtWjRhekp5SDVKQzJ3djE3RWp0dzlpbWVUaWl1VUVyWGJkZmJ4WDJhZE9QM0lYZittanRraGVnNkMvbXFYUDgzdXRtRmpaeXJPMUd3NXdOOHFZWmQyNmRRMzM5UEh2dGRkZURYL1hyRm5UY01NZlRHTjVYdjc4T0xhRU16Q1huNVhxV3QzR1BiRm40Rkxlang3bnl6MXhnM2NMWWJsdVU0Z0R6eWo3NlVjTkxqS2wwbGpHbTdoM3hCRkhEUGdaWVRuWUxDbExtL3hqanoyMjRiNjBBOEJPd0RLQmhwdndML1lzZDU0TEE2dkdzYVFNZnlhNDd5ZUJkd2tnZHV1TEtWYjBIVWdBWGNMWjFZMzFuemRlWjFUaXpQM0VTczJLaDQxN3k4amNwZ0M0d1VwUzFlclZxeXY4Q0Q4eG5yRjFHSDJVWCs0cEE0aXNBYTkyaC90U2FZVjdxNExVZzVkd2g4RVJvOTh3UnNrRnk3Y3VFWmpuWXRSaXJlOFZ4akpNZ3NMa29OWmU0bjVqTFlvL2pMNnorbnIraU9wVnIzcFZJOHp4bnRhRzAzQUhDNnc3TWJoaEs0MmtEampnZ0lhaUpld000Q21WSFNhM3BSazFZeThzeDI2RVl6NEt3S3BQRldNc2NzRnZ2a001NEFobWNHRmhIUnV5M0hoMk1KakFmdkVVQUZyZFduMXpGaE03UnVOYjFXTmlFTW5aOGc5TEpNYnV1K3NISXNIbHdxQ2NQQUlQVXdCeGozVnBWcWVmZm5xRmRSdzVaaW1FN2U1M3YvdEFlTnBLQUhFdmlkMm1NS3NZeUlSNWJwNHJoeHRzM3J1OG8vWEQrMGkzdUkvdlFRSkU4V0VkUjVoTDAxdmNNa2hxbURVZ0Nib1VjbTBHQmJFZGZmVFJBMkZEd2VUQ08yRmh5UmdGY25pVXVOWDFjeWNWNHkwb0VaVHZPUjhGZ0I4d2IyTUpiNTV2Qm1JVjQxVXcvV2JJTXFWRHhnV1V6NS9RLzhWVEFMd0E0ODlMRTljRy9Vdi9rSHNUQ1U4NTVSUWZSMjRHSkE2TFliWnpDVVhmVVhiMmZZQTg3TERER3NGZ1JKclZ6enQvTkNKekhpbjQ2QlNaSTJ5bEFpQUJyVisvZnFDWTJnakVwWCtZZm55WWJYMnBBRGJhSUpneWwyL3prM09NQWVqNmp0anBqeXU4MzZnaU5RcXliWUJVUE1jbUxxbjVCVWZDdTNidDJnYnJjTisyaDRWWkt3NzRnMytsQWtDaGpRcHZoSUU5NXRSdENxOHRESnhEb1RISUsvZGpRc2VMcXdCNENUUThOdmxsblF0TlRNN0dtSFdiUExNVmdNMmlVbG0vc1N1Uk5xRGtNS01HaWZRRmthR25oRDgyTStZWjYyUEJnTVFYOTdQUGM3QlNBUkFwR0hCRXFZWUVQa3l3dHpmRHBLRmhLUlVBdVE1dEVyU1ZEQk1TQlVOYXk2THpLSlo4SjVUd2hnMGJHcE9obE05QVdWdURudzhZc2k3TW9lR09aMUhLNGgxUmlLVXdvakhjbFh0cnlLek04R2dnem9VZlZDZFFJT1dJeU53ZjVsaGdvRmRzMU9mSEtmWEJtUklXbWRzd0lSNFFMNmpTNVNYQ1BCeDlIbU9XQkxTcENGWndiUFNOWStacUg5WnQyZWwrbVVzd1RxRnJrZW1kTU5la2F3Vkx2MU5QUGJXVDFkZGMvczkxSFVNVitzY3RJcnBUN0F6R25lbVhyaW5zNnZHRDk4RVlpRlo3eEJLYnQwRHpmaUUyejRMM3FGaE9sR3lzdlJzZ1lhOU9QNzlGbW1SMWZyZDBwQlY5bUZqZE14MXp6REgxWmF6eG1LbVlmbkphKy9FYlF4eUxvQjRldm9tVnd1YTl5cEpGWXU5bFlOd0RVMkRSMjhHN1dqRTdZUmhqQ2lMWmhDUkRUWlhyZ0dZSDlPc3pPekM5TVBSOEVGYkxqWDFLTkd3S2hnazlLRmhwMHB2Q085S0x3SDEwYVZwUmZNNHVQOExOczNQQldJZm5qeU9tU056UWlUa1Q0Y0gzb3F1V1hnZk01eG56QVovRmtxRmEwd0tnYTFOaTBGWUNZS0tWOHB1TWt5dHpiMWtDWUNLTnNsaVBuK1A2VzRaTC81ZEcycG00SVpCRkJNa0VDWXliKzNRSnlpVDg3UEpjdVZsOEFoTTNCRnI4VjlJVFJVQUV1aEtRQXVoS1N1NUVZQmtTa0FKWWhoOVZyeVFDWFFsSUFYUWxOUVYzMWhEWGVDcXQwQXVWMHMveS8wTDkxLzFMaTRBYUFXZjRlekdBS3U5YVpMS0toUXJkVGJtZlpzKytVQzkxL3hJbU1GVTdnQ1hNYlZHQ3ppZzUrcTVENkM4MjY4SDRPNjg5cFFqNjVrUHdiNVRkUUxqVGZua1NrQUpZbnQ5VmJ5VUNuUWhRcWR6VXlhVWNpWUFJTERjQ20xQUE1eXkzdDlMN2lJQUlkQ0p3RGdyZ2hFNU81VWdFUkdDNUVUaUJOZ0FtWlQvYnRsMlgyOXZwZlVSQUJJWVNXRzlYZHFPSm1hRjNGOXEybjIwTDcyZzJUeVFpSUFJelRZQ2xzVmJiZG03ME1XMndQeGZidG9kdFRlc1RPeUVSQVJGWU5nUVlVWHE0YlNmeFJxRUFPS1lhY0o1dHJPVzFuVzBTRVJDQjVVWGdBbnVkUTIxYkY2L1ZsdHZ2YUJmM3RXMVAyM2F4YlJ2YkpDSWdBa3VUQU4zOGxQQlpOZlkwMjZqdTE5S21BT3FMZHNDeXNuTzV5ZDNyV0FSRVlMWUlVT1FmUGtYVWJJVlZvUkVCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVJBQkVSQUJFUkFCRVdnbjhQOEFrRGYzTTA4b2trWUFBQUFBU1VWT1JLNUNZSUk9Ii8+CjwvZGVmcz4KPC9zdmc+Cg=="
+                                    alt="brand_gg" title="brand_gg"></a>
+                            <a class="cursor-pointer"
+                                href="https://goldengate.onelink.me/8Isw?pid=Website%20Brand&amp;c=Website_Brand_GogiHouse&amp;af_adset=Gogi%20House&amp;af_ad=Banner%20Footer"
+                                target="_blank" rel="noreferrer"><img
+                                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkwIiBoZWlnaHQ9IjU4IiB2aWV3Qm94PSIwIDAgMTkwIDU4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPHJlY3Qgd2lkdGg9IjE5MCIgaGVpZ2h0PSI1OCIgZmlsbD0idXJsKCNwYXR0ZXJuMCkiLz4KPGRlZnM+CjxwYXR0ZXJuIGlkPSJwYXR0ZXJuMCIgcGF0dGVybkNvbnRlbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPgo8dXNlIHhsaW5rOmhyZWY9IiNpbWFnZTBfMTIwMl80IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC0xLjEzMjY1KSBzY2FsZSgwLjAwMzkwNjI1IDAuMDEyNzU1MSkiLz4KPC9wYXR0ZXJuPgo8aW1hZ2UgaWQ9ImltYWdlMF8xMjAyXzQiIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQVFBQUFBRUFDQVlBQUFCY2NxaG1BQUFBQVhOU1IwSUFyczRjNlFBQUxBbEpSRUZVZUFIdG5RZWNGZFgxeDg4V09rZ0hzYkZnUTJQQkJpS2FJREdZcUFrcGFwckdRbUppaWFiOGpja25tdGpTVE5Sb290RW94cWlKTVRGU0JFdEU3Q2dxb2loU1ZDeW9TRkY2WDVqLytkNjM5em52OGQ3dUFnOVkyTitCMlRmMXpzeDM1cHg3N3JsbHpDUWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUlpSUFJaUlBSWlJQUpiQVlHeU9xNnhpVyt2YTU4Nmt0Qm1FUkNCTFVnZzhYT3ZMbmIrUXNyZHpYZitraytEZk9ybFV5dWZKQ0lnQWxzbmdhVisyVk45K3A5UHczeWE1Vk5SK2FadmVjTW5ySVltTWRBN3NHMjlBK2cyT3A2Vml1eWMyZmsrZjcxUEhWTHJOQ3NDSXJEdEVHanZ0NEozdjh5bmNkeFdOQUJmOVBrYlU4dHNrNGlBQ0d4N0JDajJIK25UeXo1TlphR05UMWlEZlh5U2lJQUlOQTRDR0lEKzVmNW5zRTlTL3NieDBIV1hJaEFKN09zemd5a0NYT3RUbFU4U0VSQ0J4a1dnSTBXQUpUNnBxcTl4UFhqZHJRaEFZQ2tHZ0tvZWlRaUlRQ01rUUF4QUlnSWkwRWdKeUFBMDBnZXYyeFlCQ01nQTZEMFFnVVpNUUFhZ0VUOTgzYm9JeUFEb0hSQ0JSa3lnc2hIZmU4bHVmY0NBQVhiRUVVZlk5dHR2Yjh1V0xiTVhYM3pSL3ZPZi85aXFWYXV5NStqVXFaT2RjTUlKMXFSSkUwdVMzSXFYaW9vS0d6OSt2RDM5OU5PMjExNTcyYUJCZzhJKytmdVJHUHV5SC92blMxbFptUjEvL1BIV3JWczNHejU4dUwzenpqdmhuRHZzc0lPdFhiczJmM2RqZjY3eDVwdHZ0dXJxNm5XMnAxZVF4dURCZzIzUFBmZTB5c3BLZS8vOTkyM01tREgyN0xQUHBuZXo4dkp5KzlyWHZtYWRPM2UyKys2N3oxNTc3YldjN2MyYk43Y2hRNGFFOHc0ZE9yVGdkZVVjb0lWTlRxRGtQYjdLS2l1VHNxWk5TNTZ1azJoUWFlNnl5eTZKSzFxeWN1VksxOVZjbVRCaFFuTFlZWWRsci9lVG4veGs0c3FXdTFOcTZkcHJydzM3L3VBSFAwaXRMVHg3OWRWWFo5Tk5NM0hsUzU1Ly92bHdrQnVDc005TEw3MVVPSkdhdGE3NGlTdHJ3ZlJpMnVlY2MwNHljK2JNZGRKeFk1ZTRFaWR0MnJUSkh0L1VuL3UwYWRQQ3ZrODk5VlRpQ3AvZFJubzllL1pNM0JnbEN4WXNTTmczbmtPL1crYmRMcmtIVUw3bndkYjA2R050aHo0OWJlWGtsKzJETys2ME5UUGY4K2U3YlVtSERoMUNMdCtuVDUrUTZ6LzAwRVAyK3V1djIzYmJiUmU4Z1FNUFBORCs5YTkvV2YvKy9jMlZKNXZydi9IR0d6WnNHTjJ5UHhaeTlZY2ZmamlzSUhlLzZxcXJRczZJdDNER0dXZFlzMmJON01ZYmI3U2xTNWNHRCtCLy82TnJkMkZaczJaTjJFRHVqdHgwMDAzbVNtZXM3OTI3dHgxMTFGRTJaY29VR3oxNmRQQUFWcXhZWVFzWExnejdGdnJqQnNtdXZQTEs0Q0hjZWVlZDl0aGpqNFY3NmRldm4zMzV5MSsyMDA4LzNUcDI3Qmc4aitoRnhHdHdBeGlPUGZ2c3M3Tkp1MlVJMXhMM3lXN1F6QllqVURJclhOYXFRMUk1NU1LazRwemZKUjB1LzNOeTROalJ5VUVqNzB5Nm5YRmFVcEhLSmZ4T1MzYk9MWlhXYjMvNzI1RExmZkRCQjhsblAvdlpuUHNoUi8zYjMvNlcvT3huUDB0Y2ljTTJMeUlrL3RJbjdoYm43RnZYOVgvNDRZZkJ3MGpuc3NXT3dRUHdva0c0TGk5dXJIT2VjODg5TjJ5NzY2NjcxdGxXS00ycXFxcGs5dXpaQ1RuOXlTZWZ2TTR4WC96aUZ4TTNIaUhONzM3M3UyRTd1ZnFycjc0YWNubHllcnllVTA0NUpYdHNqeDQ5d3JwNTgrYkpBMmdBZWxEU0lHQloyM2JXcEVVcmErS3BMcG0xMk41N2FvWTFhZFhTOWpyOVJPdHo4OVhXN2NUQlZsYkpLR05idDVBelU5Wkdmdk9iMzlnRER6eVFjME56NTg2MTAwNDdMV3hidlRwM05DYkt6K1RPbEpYVFUwNENOUXN0VzdiTXJtN1hybDEyZmtObjhDUVFycUUrOG8xdmZNTzZkT2xpYmpEczl0dHZYK2NRNGd3alI0NE02Ny82MWErRys0bzdFVnU0Kys2N3c3bmNXTm8rKzZpL1dXVFRrSDdyOXliVTk0ckx5cTJzdkN4TTVlVVZ0bkRPTXBzNWZxYnQycWVidGUzZXhRNzYwZW0yOEpnQk51MGZ3MjNPUTQvVk45VUd0eCtCc0s1ZHV3YlgrWjU3N2duWGgxTGo4clpvMFNJYjJFTEJjZm5mZlBQTnNBL0c0S0NERHJJbm4zd3lSMW5ZZVBIRkYxdHRybjFJWURQLzJYZGZPb3o1V0ZLMUZEbTRsNU5PT3NsNjllb1ZBcHpzRHd1TXpQWFhYeCtLTEJRVnJydnV1bEQ4aU1VRTlwTnNlUUtsTlFCK1ArVnVBUHhQWnFRUjcydTRjTTV5ZSt1NUQyeVBQbDJ0V2NzSzY3SjNUK3QyNlhrMlovQkFlK1gyNFRadi9NUXRUMkU5cndBbDV3VjM5OXdXTDE0Y2pxWWNqekVneDBSNDBZbTgvL25QZjdZZi8vakhZUjNMNU9SOSsvWU55K2svUk0wYm1yZzdIeTVwMGFKRlJTK051QVNDZDRIQjR4NFJqQUR6bFA4UE9PQUE4eUJvOEloKy8vdmZoKzM2MHpBSWxOWUF1T3RmNFM4QlhvRC90YlZsaVRYMTVVWHpWdGliRStiWVhvZDBzbVl0S3F6QzEvYzRiRC9yZnVDZTl0Wmp6OXNMdHcyM3hWTmVieGhFNm5FVmI3MzFWZ2o4RWZ4cTM3NjllVVE3dk93UFB2aGdXQ1lKbEJ5bFRydmJLTW5qano4ZWNzejgwOHlaTXlkLzFSWmZualVyTTM1a1ZWVlYwV3NoNTBjOFZoQ3E5dEwzeTd6SFNPd25QL2xKS0VKZ0RFaFRYa0JSbkp0OVEwbGpBSXdnSHBUZmxiNjh3dDFBLzYyc0tMZW1UU3BzL3J5Vjl0b0xIOXFhVmRXK1BySEUzZUZtVGN0dHYyUDYyVGR1dU5BKytkUHZXTE51RFM4WExQUkVLT01UclcvZHVuVldtY250dnZXdGI5bm5QLy81TU5FV0FQRUlXVTRTWG1Wbzc3MzMzanBUZnF3ZzU2QXR0SER2dmZlR2lEMzErdVR1K2RLcVZTdjcwcGNZWXM2Q1lZdTVmLzUreEFKdXVPRUdvdzNBUlJkZEZMeUZmQzc1eDJoNTh4Qlk5Nmx1eEhuZDZ3c0tud2x1WlFKZE1TYlFEQ013ZDVWTmUyRytWYTljNjBiQXpZVXJ4MW8zQkMyM2EyNkhuVFRJdm4zYlpYYm9kMCt3eXBiTk4rSXFOcytoZi9qREg0TDcvMy8vOTMvbVVlNGNCZGwvLy8ydFI0OGU0VUp3aGRPU1laTWJBR1JkL243cFk3YlVQR1Yvak1EaGh4OXVkOXh4UjJnRVJGR0huUDNnZ3c4T2pZMzIzbnR2d3lCU3hxOU5McmpnQWhzM2JweTFiZHMyaDFWdHgyamJwaWRRMmlLQU8vNFVBYXltQ0JBdTN4V0FzQUJxVU9GZXdmeTVxMjNxeElXMi80SGJlWEhBRFlZYmdYS0tqVzRJT25adGE4ZWQreFhyYzF3L2UrTDIrKzNGdThkYXNqWlRyNzNwVWF6ZkdSNTk5RkdqanB3eTdhMjMzbXJlV01hOCtpdkVBRkFZdkFQYUJkQVdBRUhCeWZVb0dqenp6RFBaazdFT0EzRGJiYmZabi83MHArejZPSU95VWV0UVh3T0JnaUtrbVM5eFhkd25mM3YrTXRkMjVwbG5HbTBldnY3MXI0ZVdnTndUeCsrMjIyNGhKMGY1enp2dlBIdjVaWWFZeXdqWHpMbmkrVmhMclFCRkFJcEp4RW5ZUjdMbENaVDBLWGdsZ0NzN09YOG0xeVB6QzY4aE15N2hKZmIzODhONXEyM3l4TVYyd01HdC9TVWlYckRXSjNlVjNZM21wZHQ1MTY1MjhzV24ydUZmT3NJZUhucXZ2VHJtdVMxUHFzQVYzSExMTFRacDBpVDc0UTkvR0hKSkd0cmd5aE1qb0puczczNzN1K0RxY3lqQlFwU0Voa0k3N3JoalVBQVVHMFVnTnJEenpqdXZjd2JLeXErODhvcFJIYmg4K2ZKMXRoZGFNWDM2OUZBVDhkRkhINjJ6bVRqRDFLbFRzN1VTNit4UVlBVmxlQm9Qa1lOLzVTdGZDWXJQZFZPV2o0Mld2UFZoOWtpZUh3Mk5hQktkMzhDSVloRkZnTzkvLy9zaGJzSytraTFMQU0wczJWT29yTnJUZGpqNUhMS2ZrQ3dLbjdFRmZwck1mNnhBdU9QRWMvM3RPemUxUXc1c1lhM2M0Ni93eTJqaXdjRktOd2EwSTJqaWNZSVdQcE9zWG1PdlBEWFo3aDg2eW1hTW43SmxhZFZ5ZHBRVTVlYWxuajkvZnNqeDBydkRJaW84T1NpNUk3OXhJcEJJcTd4OGliay9ocVUrQ2hOejMxZ0xrVTZQYzdLZFZuZ2IwaEtQYThVYjRCZURGbXNBMHVkZ3ZxNXJwbmFCZTJtSWNZLzhlOW5XbDB0ckFIcjBzcDFQY1FPQUsrQVNjdnlNdnRjVUE3QUNIaWlzV1pjeEFwVjI2QUhOckhYek1xdndGWlcrTFJnQ0x4ZDR0eGxyNmg1RGMvK3pjc2xLRy8vZ0JCdngxOUUyKzdXWjIvcHowZjJKd0dZaDRPcGxGNWZxVEJYdE8xbmJBL3FHSElKaVFDd09oS3BCMS9vS053eXNaNWx0bFQ2L2FIbGlTNWNrdGtQbmNtdnAxYzZWcnZTVlphNzhiZ2c4WkJBOGczS1BBN1JzV21aNzc3ZUxIZkc1UTZ4MXAzYjJ4dFNadG5yWnlsSmR1dElSZ1VaSm9MUUdvRU1uNjNCZ1A2OENyQWk1ZkZUMCtCc01BcTBGWGZseFI0TmI3RnErZUhtWkxWbVUySTZkeTl6dDk2QVlYZ0NHd0lzQmVBVFVHTVFZUVp2V1Rlemd2cnZhcDl3UWxIbFo5TFdYMzdhMU5SMWdHdVVUMUUyTHdFWVFLS2tCcUd6ZjJUb2UzQytidzBlRjU3ZU1NbTlRL09nSlVHTkFjY0RMeHQ1V1lORXlOd0tMTTBhZ3BSc0JMc3hYdXdHb01RSVlCWjhuVmxEbXdjSk83WnZiRVVmdVpZY05Pc0NXcjFodGIweWh4MkhKd2hrYmdWU0hpc0RXUTZDa0JxRENEVUFuTndEMEEwQ3hNd3FmY2Z2TGE5ei9zTDZtQ0JBTmdDOTZzWUhpZ0hzRFBsTDV6cDBJQUxvbkVMeUFUTEdBMW9NRUIyT01vTnpqQlJVZU1OeHArOVoyMUdmM3Q0UDY5N0pGQzVmWjRyZm4ydksxTWdSYnp5dW9LOTJTQkVwckFEcDF0UzRISFJhS0FDSDNEemw4SnFlUHl4Z0ZZb1RFQW5LTkFWSHhNbHU0ck53V0x5bTM3cDNYdWhFZ0J1QVR4UUNmS2xLeGdWQTBjS09BSVdqaTYzZmZ0YU45ZGVmT2RscjN6clpkOHdwN2FlWkh0bkxOdXFQZ2JFbllPcmNJTkRRQ3BUVUFIYnRZbDBQNmh5TEF4KzUrcGxJZ28vZ2ZCd0NKQVdTTlFwaXZDUXk2dGk5WVhtNEwzUWhVZFY2VDhnUmlVY0IvM1RPb0NQRUJuOGQ3Y09PdzNhUjNyZU9VOTYxZG0yWjI1RjQ3MnVkNzcrS3hnV3A3NmIzNUpvZWdvYjEydXA2R1FxQ2tCcUNKRzRDdWZRNFAvUUR5Yy9oTXJRREZBUS8rZWU0ZkRFUk5zWURpQWQ0QS9RYmNYSGhNd0QyQkZkNTBlRW1GOWVpNHhsbzFvYUdRZXdIK2g1Wkw0UmVQb0ViNU83ejZ2bldZK243WWtIamEzcHpJdXJSdGFjZnMxOTJPNnJXREc1TmxObVYycHRkZVF3R3Y2eENCaGtDZ3BBYWcwb3NBM2ZvY2xxa0dkQVdONWY1WUM1RDlwUmhRby96WmRSZ0c0Z1kxdjVYQkU2aXdCVXNyM1Fpc2RpT1FDUUNTMjRmQUlNYkE1enROYytWLzdYMHJZNE1ydnljU0RBeFJnTVFYdTNkdVk0TVA2bWw5ZTNheFdSOHR0TGMrV3JiWnVITS9kSUNoV1RDL0dELzFoTnRzK0hXaWVoQndGU2xkNkx6bEh2dlkvdWVjYitXMDgzWU45UGMvaUt0aytBMFpmTTA4eWhIV3NsUDR6eCtVUExQTUFXeXFYbHR1UFR1c3RpL3NzOWkyYTdiR0d3dDViUUR1djA5ZHBzK3lUcTc4SVZEQUFUSDJGMDljczhLVHNhYnVOaXhhWG0zRG41OWhWOTAvMFNhOXYyazhBcFQ4MDUvK3RQa3dZYUVmZkZWVlZlZ0F3LzNTcjU1bXdoTW5UZ3lqQ0RHT1lMRWVkTnpPdGlyMEkyQlFGZTZkRm9rK2VHalJWb1hiS29PR2NsL29SbFNiamI2bWxyMzJ0UU8vL3hQUGdZTWFlM3F4S1RES3pLbkkrY05QS1A5elloYkp1Skd3ajgrSFhlTCtmbmxya25MYkRTT3c5d0pyMTJKTktBNTBlVzJXZFpuaE9iOTdBbDR4bURrKy9HVTVjMHMxeWRhczlmUDR2MG8zQkhNV0xiT2J4azYyUzRkTnROVWxEQkF3YlBhUGZ2UWpZOEJNbXNQV0pqU0RwVk1RQTRBeXRGWmpFanBRMFpFS29ZL0RjY2NkRjdvVE55WUdEZVZlWFgxS0p5UldYdWJ0MnowWHpFeVpCai9sbnZVek5nQlIvc3c0QVJuREVNcnlyQXZiYW82aGFPQVRNUUphQ2xhNk1Xbm12djZNQmMzc3ZtbnRiY25xSnJiOW03T3Q2OXV6dkNHUW45SFR4djBQUlFDS0FjeDdlbUVLMnpMN3NOOWFML0NzOGxxRGptMWIySVhIOTdFZkhOZTdKRGRQUHdCRzdhWGZPeVBmMUtYOG5KUjkrSllBM3cvZ1dMckpOaGFoTHdGOUVwaGl2NEhHY3U4TjdUNUwyaHVRakppNmZSU2VURGhrNG43SElZY1B1dmx4bnB3cEF2aXkvOGR3VUY1M3RRMTh3cll3aThmQVRPSkdvTnplWE5qY0ZsenpuTFhhWVk2VlZ6WDNqa0w1emt2bStPZ0JaSHdKL3VidUY3WTNyYlMyTys3aWFXL2NrR1I4OE9PZi8veW5mZVl6bnduWG52NURiemcrak1GSE5IQjFHVDBJOTVlUGJHRDBFSlNBb2IvNUhUSmtTUHJ3YlhZKzNha3BQYitwYnBqT1J4VExJdlA4ODlCVitkMTMzdzNqTnpKZlNPakJTVzlQaEgwWUhyM1l2b1dPYjZqclNtb0F5SFdKOXBQYmU5L2VZQUZjaGJPR2dIa0VnNUJSN01LLzBYQ2d1bUcrUmxsT0hEWFcrbzY3M3hhM2JHZlZRL2F4ZHQyOXdYQTFkZjJaZEVQaUxNVUVvdDdYTERNQUNWN0g0c3EyZHNmYlpsZU5laUVlc2tHL3ZGaU1sVTkzMmJRd0NDamo4VE1Xd050dmUxTmxMK3RHOGVHOTdYT2YrNXo1TU5vMmNPREFzSm9SZ3Y3Kzk3L0hYYmI1Myt6ejJVeDNTcnlCWWxZeEF4QjdKdktzR0srQXdWNTRKbWxoNUtNLy92R1BvUmNqUFRlUFBQTEkwRlU3dmMvV09GOVNBd0FBcXZJd0FwbDhIUVYyajhCejRQalFneEh3elN4bjlETHp5eEhvTVcwRGFtYkRQZ25MUGcwZS9vZ2RObTZzVlZzenExaTIySllObld4bFo3Z1JxUEt1cGF1cCtFdEpLbzNNV2xkOFQyWlZaU3Q3K0tNVzlzZUhwdHJvWVErWkxTditRWXhVYWtWbjZlK2ZyL3dNRE1yNEFIeVdxNURRamZiZi8vNTNjUDNwWTgrSE5SaE1oTEVDSlp1R0FJcVBoMVhNQUhCV2lpSjhsbzJKWWQzT1AvLzhuQSs0Y0N4RkY0UzA0dnNjVm16RmYwcHJBRnp4S09kVERFamNwODlWY2hTWi8xSHgwV3RmNFJJOEF2K055OEVRK0hMaTBGbDM3TEJIcmU5VEQ3dnkrMFAwVm4vK0NOd0lMTEtsTjcxaTlyMTlyWDJQcHJZMmVBS2V2ZWNKellXdHNybE5YTnJhcmh2N2p0M21vd3hWZnpBemI2LzFYNlNzait1ZUZyd0IvNEJHdmZyYWsrc3dYajdmNWZPUFpLU1QyZWJuTjRmYlh4dEVpbU40WmZGOTR6Y3FOOGZ0dXV1dWR1dXR0NGJuR0w5N2tFNXZTMTkvK2xvMmRyNmtCb0RFTWwxK1VjUlVyby9pQjJYSEcyQ2VyWmwxR1JQZzY1bnhEV0daUDBINXpZNGU4YmdkOU1SalZsM213MDY3TXE5MXcwSnU3ajBEckhLcEc0RWJYcmF5cy9lemRqMmErZmlDR1ZjN0hFNHpZZjhJeVp1cjJ0ak5UOCsxRys5K3dENmNXcm9CUllqMnB6L2M4ZHh6ejltM3YvM3RlaW0vMzExV0dwdnljK05SOGJJUU52TU10UkNQUHZwbzhBaFFabkovWWpOOENJV3hEaEVHZDduaWlpdkNOeHdLamE2MG1TOTVrNTJ1cEFZQTdRME5lWWkrMTF4eVVHeWZEL3J2YThONlh3ak9sQytFTmZ4bWRzanM1OHJQbG9Fakg3Y0RIbjNDMW5qTkFnYURpZU9xZmFheWJJMTdCQmtqc09RNk53TG43bTl0ZXpiMXNRVzlyVUJGcGMxTFd0dS9KaTIyYS85OXY3MzIzSVNhby8ybkJFSXdhR0JOK1oza0dNbm53Z3N2RE1OZ2xTRDViVDZKRGNsQmNidkp1VGZrMkh5Z0RNMUdXVDlmL3ZyWHY5cC8vL3RmTy9yb284TW1ZZ2Q4OGVndmYvbEwvcTdiekhKSkRRQnFUelVmUllEZ0FXVFVQYVhjdWU1L3hoaGtsTi9iOWJqTHp4cmZ4L1gvaUpGUDJmNWpuM1FscDAyQlZ5MmFQL3dhN0p3bjF3Z3N0Q1hYdm1oTnp1dHRGWHQwc0ZIVFZ0bFZkejlwNHg5NndoTXQvYUNpeHh4empCSE1pMEpERmhyMWJBN2hwZnpDRjc1Z2pNWkxDME9HR1o4eFk0YmRmLy85WVl5KytsN0RKejd4aVZEL1RwbVg0YjJwajJmQVR6N3BuUjdqcjY3MCtDUTY5Zmg4K291Y2xJWk9qQ1RNMklNc000UVlndkx5SVJVVU9Ccjd1dEttbU1WZ3BGd2pIMVJoQ0RKcVZhaHVIVFZxVkYySEY5M09kUlVTMHIvMDBrdHR3SUFCWVp4RzlxRk5od3hBSVZxRjFybis0Z0VReU12bTdNd0Z2UTVyME8vd0FtU0tBbXdJS2gvV2gremRkK2czYXB6dE0yWmN5T0hMUXV0QWQrMkQ5bWYycDRZQm81QXhBdFdlbm8reHR5SnhKVnhxdDR4OXowYi9kNHhIL0RaZGs5LzhML3VnZktYSW1Rb2hqZXY4VStSMitlV1hod0JWb2U4RU1qdzVnY1JmL3ZLWDVoOElqWWV0ODh1WGdrbm4yR09QRFc1dS9nNEVKdmxTOFM5KzhRdUwzemJJMzRkbERPQmxsMTFtSjU1NG9uWHIxaTFuRi84b3FwR2JrbXQvNzN2ZkM5dFEvdDEzMzcxZVZXZTBpZkRQcFlmdkw2YUxXU1RFNTlkdzFURXlqRExNb0tXbEZJd3AxMHBWTGJJKzdUTXdMSGdNakFyTlIyTXdlZ3llU25FRGc4VnlXajcxcVU5bHZ5UkZOU1NEckJZVGFweW9QZUljeENzWVlwMnZUbStzbE5RRElPZU83UUNpcWdacjd3dmsyalZlUG5NZno4Y2QzWEQ0YWp2azNtZHNyd2ZIMitxeUpxSE1uM0grL1RaOW05dUNHc0Y4VUFCd0tXOXRrLzFoM1ZheDJPNGFlNzlWejV0YnM4K20rU0VheklzY2hZZjZ4QlB1YWRRaHZFajBCNmlQRUtBaU5oQ055aUdISEJLK3JFUHVYMHo0WEJtdUs1L2hvaGFDdGduNWd2SlEzVWg1dDVpZ2NFVEIrYno1V1dlZGxmMzRaM3AvY252U1laOUNRbnNIREFuVlpYZ1hDSjVLYlZING1BNGVBMVYyTkpJcUppZ0IzeHRFU2YwTHhlR3JSTVgyWGQvMXRPdElHOWo2ZnJFSmcvcXJYLzNLK0o1aS9uMHlDakxHRk1PWTloUTVKbjQyRHMrSmpLVllUT2kwMDA3TGZudGh5Wklsb2ZhcHdSa0F0RFRFQUx6MVhxYnFEL3lwbko4bHJJRC94OXQzYnpDejdBdXM3ejF5dk8zK3dMTWU4R01jZkxTOU9yTlRTS1htang5VTRXNTllVVZUbTltMXU5M2RlclhkOGZwenRzanIzamVIa0t1bFh4QWVSbjFlRXI2d1M4NVFINkhERU1VTXJEekRoZk5SamozMjJDUG5VT3FweVYyNGxxcXFxcERic2dOajd2TlJUc2JyVDc5c1BYcjBDRVlFRHlBdDVEemtvaWhlOSs3ZHM5RndHcjRNSFRvMEZEZlNPUk9mTzZPMkkvOXJ2NVNyWDNycHBaQU9iak5HSU0wcEdyUDB1UXZOWDMzMTFUbkt6M0UwdWlFWFJlRFNwMCtmTUgvb29ZY0dwWWhmYWc0cjYvRW4zUzRqZjNlVU5Yb2RuSnVQbjlZbE5BSDN6OEZuUHd1WHZ6ODVOaCtGaFJ2WEd1OEZJL3FkNzN3bmNPSzU0Tm5nK2VRTHgvUFZxVmhUd1RXdFR6RXRQNzMwTWxscHlZVEVNQUEwdHFFdEFNMTVnMGZneTZFWk1PdHFwbEN2U25IQkE0WVZiakQyRy9XODlYemdlVnRUN3NFZWQrbHg4bW4xdjliZENuNDl0QmY2OVplVitVYzV1KzVpdCsyNWs1MnlZTEpkLy9Dd3phYjhnSW91V0lUR1MxTGJDeFgzSTRjbU42elBoTGVBQWlMa0ttbmx4OWljZSs2NVJoa2VCZUNYWFBDRkZ6NXUxTVR4UkxweEc2UHdHZk8wOG1NOHlPSDV0bDlNaDVkejh1VEo4UkFqTjZSUkRQY2M1ZGUvL25XTzhqUCtQOS8rSTNwT0ZTaTVHcTR0eFlqMUZSclg4Qm15S0JoWFBqb3ljT0JBdStTU1M4TEV0YVkvVlk3eXJhOEJnQXYzRkNlV01iUW8zNm1ubmhwUEg3N2pRRlB0Mm9TaUdSOTB3ZUFodkErUFBQSklLRUx4RFFSaUtyRUhLTVVDMm81RW5yQk9CeVBoRjVVOGZVN2Ftc1RhQ2RLNjlkWmIwNXMzYXI2a0JvRG9IUVlndEFYd1lDQktIb0tDUWNuZE1QaHZWUGhnQUNvejQrTHZQWHFDZGI5dmd1ZjhsVDRSN3FOUFA1VitQdS9WZnZUWG9RaXgzTHNiMzdkUGR6dXJlb2I5K3FHN2JPWVVid2RRd3M0ODlTRkp4RDg5Zmo4S3pZT3RTL0FjNml1OFJFd0V2M0IxbzlDSWFNaVFJZUdGbzVreHhRK2FvNDRlUFRxNDdXbmw1Zk5rNUM0SXJpV0tFb1ZlaWJ6b0JMY0lmSkVPOTRUclRZQ1JUNXBISVRlbm5JOVE5T0hqSUZHNFJvSm1HSnQwczFpOEFjNDNZUUsxTDNVTDZTRGNXelJhR0ZYU1JybmlkcFNERm5rRUhxUEFGVGU2a09MRWZmSi9VVXh5VUl3bTEwanZURngwY3Y5NGZvb3ZHRFlNWEczQzg0Y1hSUnlFR0F3R2kvaElqTFhRMEN1bWd5ZEFUOUVvdEFPSjdQYmJiNy9nNGNSdDhaZkdZdkc2ZU1hRjJpYkVmZGYzdC81dlpUMVM5Z3pmSDRTNzlhNzRQaHNFMXo3TTEvekdlY29BN0wvcmlCZHNwOUV2V0xYbi9BejVsWlhNTytGTmZoS3JidGZXWHVqZXh1NmFOOTJlZnZncGI4Rlh1TDEyOXRoTk9JT3k0RFpqK1JHc09ia1NMMUZ0TW16WU1KczJiVnJCWGJEcVJQWDc5KzhmdHZQQ282UW9FUzlZRkZvWkZvdCswOStBM0lYY0laWkJVV2ErMlVlWlBoMS9vQ1VpMy8wckpBVEJycm5tbWpDRlorY1BDUS9qSC8vNFI3aWVtTk54TEY5RndrTW9KQmdXcm9mbTBQRjZDdTNIT3BpaXlNUTZvbENjd0xBZ0ZDVlFBbW9FaUR1azA0djlMZmk2VWxTeW1FYXhYNG82dFFtMUljUlIwcmx6c2YzNUNoS2VDOCtPWjBnVGNKNFpOVFFJMTBSbkwvb2luSERDQ2NGUThiNFF4RVRHamgxcnp6NzdiQ2dlb3VUY1o5ekdkank4ZEQ4VGloSFJZTEI5WTZXa0JnQjNJdVRzN3RMVDRRWmx6eG9BbHZ5LzYzMm83dU8zKzRnWGJZZlJMd2JsSjcvbmlIaEJmQ1FrYWRYYXB2Um9aOE5YdkdQL2UvSStXL3ZoZ28yOTM1SWNUMjVCUUMwS0ZyMnVxcUppaWhMVFFGbWlBY0Fnb05BMExJcENqb2dCcUUzSUdTZ2l4QnlTb0NHS1QyQXFDdDJRcVVhclRUQVE1R1RSczZIZEE4OFJyeUl0dVBrb2J6RjU0SUVId24zc3ROTk94WFlKNnpGNHhDN1MreEZZeGVNZzk4U1FWVlZWNWFRUnF3TXhUR25QSjJlbklndjVYaHk3b1ZUazVNUk5xTUhJN3d0UUpLbnNhcFNZM0IwbVhIZU1mMkRJOFlqZ0Z5WDlHVGllSzBZN3hvY3dKbkRHQUNKOGVEWWFYWXB0eElOS0tWSGZTcE9tMzJTb0JrUzdYWm5ETGZzZjdqMVQxbUNHRldZN2ozelJPdDg3eVpYZnF6VkN3TTlML1VtMVY5djdjUzJhMjNzOU85aUQ1WFBzM2hkSDJQSjNacGJtK2txVUNpOEpuWG1pMnpuUVhUNENVN3dFR3lyeEJlQjRnbkpFZUFtNFJlRUY1ZU9qdFFsRkJBeEhOQUM4T0FUM0tNdEhJUjIrTjFpYjBQSU5ReElOQUduZzZjUVhNUjdMQzFtYjRCYWpBSFVKQm9DNFJYUnoyUitsUCtta2s3THRDRmhIZWdUQVVIcU1GRjdHaGdnNU1nWXVMUmhkMmtMVUo1NlRQbzU1WWg0RVh2RUE4b1hxMGhqUGlkdlMzaGpyeU5YcGU0REJoZ1BGTXp3UWpFaTZDRWc4WVgwTlV6eG5zZCtTR29DTUIwRFozeWZQejRNUlFQdjlQeEtzb0M5M0d6bkoybytjSEFKK1NXZ0I1S1YrSDhHM3JFa3pXN0JiTzN1aTlTSWJNZmxCbTBmVDNacWlRQ2FGaHZHWE1qZTVEbVUyQkhlUE1oLzF0QnZ5QXBIelUzMFhoWElwcmkwdlpSUThxM1RqbzdnKy9jcys2U0lEeDVQanAxMUc5dUhGcXUxRjRqbWxYMUxTUUVuemMvdDhnNUMrRnVZeEd1bnJ5ZDhlbHprZnloZUxBcXl2cXFxS200TkJwT2hEN2tlTndNWUtoZ1MrcFJDdWt5ODd4eUlobkREVUdGbnVDU05Lam81M0Ezc2s3UTJ3VERFQmcwWnNBaUhPOGZPZi96d1VHZWlYZ0xBUE5RMmxsc3dWbFNoVkJ2c01BMy80aldZOEFYNXB1MDhBMEFlQjhDQmdWMWY4dGlNbSsrQWMvaGxRTHlxNEIrVDJvZEtXOStocWovVnVaWmZPZnN5RzN1TWRaTHhzMVJDVkgxUW9CR1ZySG5hVVFZTUdGUzBQeDMwSy9hSm9ST2lwSlVBd0lPUUlDSFhEVVZDbUFRTUd4TVdDdnhpa3RIdUpOMENqRnJvblI2R3NUSTVWbStEeXB4djMwTE9SZTU0OWUzYk9ZV212SldkRHpRTHViTnF0TDdRUDYxQUl2QjZxTHROQ1hDWFdNQkRRTElYeXgvT2x6N014OHpSR2lzcFByUVY5UkREbTFHWlFkNDhudzNPcHE3Y254WUJZblV5TWd2c2w1aEdGMGFOb2NWcHFLYWtCSUtlbkJpRFRKUmlsenhRSktyeGVrUFh0NzUxaXJVWk9zV3BYL2pVKzFwL1g4ZG1hYmgzczVVUGEyVlVybjdkcmgxMW5NeVkrdjlrait4c0NsZWd0TGxsYXFMS2lLaWtXRGRMYkNzM2pxbE91VHpkNm9lNC9sdlY1YWFLUlFVbW9Kc0lRRkJPRzJZcDEyT3lESjRGQlNTc091UkRseXRxdWtmdElld0JjRTBKN2dIZzlMRk5EOE0xdmZwUFpkWVR6MURjNno3VlFMaWVvbUJiNEVnZ3M1SzFRZlVsMVlLd2VTeCszT2VmVDU2Y1doVEVETUpacG9SaVVmaTdwYlhHZTRHdjZmY0lESUZpSThBenhNamFGbE5RQUVQdW5OMkNvNjYrcCtxdWc2cys5Z0RZanBsbnpZVlBkN2ZkcUFsZitwTk4yOW5iZnp2YTNsbFBzaW52L1pDOC8rWWhIWW9vSGxEYkZ6VzlNbWp3VTZ0SFRBU2hlZXFxU0NHRGh4aFdyK3FPc1MrNUFmVEhGaGlpNHBUejQ2R3BqQ0FoMlJTRm53ZkNreThweEc1MlIwblhvdUxua0tnaDEyVVNyb3hDdm9CeGM2UHArK3RPZjV0U3JVODZPZ1NldWgwRXpvbUNNR05Nd2ZWNjJ3WUhxdXdFREJzUmRhLzJOTGpGbGU3aEdvYjBEUEVrdkxYQkErWWtSVUJ5RFdTRW02V00yMVh6YUlCZHJ4VWR1bmk3aUZic1dubTJzeVNEK0U3MUMzb0c2MmlNVVM3T3U5U1dOQVhDeW9QQ2VXeUVVQ1hpNFRZWlBzYWJEcG9XNi9ZcldMZXpEUFp2WlV5dW0yaU5qSDdSVnMzTGR5bkRnVnZJSDE1aTIzN3k0NlFnNU9TTVBqQnlOYnNJOFFISUJ5dDRFZXFpWHAzb25MZVNBS0YvYVZVVDU2SkpLVkRvcUFTM0NpT3FUMjFCZGhSZEI2emlxbWRKQ3k4TkhhMXJQOFZMUmdBZURFSFArSVY3bnpqV1REa1VFMHFFcE1WVk9VU0ZKajNKbmJIV0dnYnJoaGh2Q09BYnhYRVR2eVowSWloSzV4a1BnL3ZQN1M4VDlhL3ZsbXJtLzJCdVBtQWRWa3JqQ0ZBZUlaZUJ1VTRTSkFVck9UMjBKMTFDS3BySEZyaS9OSkwxUHVpOEMxWHdZSkdvQzRFQ3VmK2FaWjRhZW9tbERrVDQrUFkrbmhadWZydlpqTys5U05BenAvVXMxVDBHMkpGUDN2bjJUbno4NUxybnc2ZkhKUmMrTVQzNHgvdG5rNGd0dVR5N3ZlV0Z5eGI2WEpKY2QvNGZreTE4L08ybTd4MjRsT1YrcHJudGowL0VvYitJdmIrSTV0ei8zOVJlUHBpZnVFUlJsNHJscHdVUTl0eXk0M2wraXhJM05PdW01TVNtNGY3SHI5dHFPeEYvaW5IVGNnQ1R1Q1JSTXA3YVZuanNtWHF3SWFiblhrTjNWWCt6RUZUcDdqcXFxcXNTcnpiTGI2NXFCbmNkZnNzY1hlcFp1NkhLZURSd0s3VmZiT3ZkR3NwZml0U1NKRytHUWhodWY3SHBtM0dnbjdnRW03czRuMDZkUHo5a1dGMXloaTU3ZnZhbkVnN2R4MThUaklvbG5Ha1gzcisyYTY3bXROTXJQeVRBQUY0MTdKcm40MmVlU1h6SmQ4TS9rMGw2L1NpNFpmRTF5MHJjdVNIYnFmUUJWL1p2eVpyWm8ycDRESkY3ZVR0ejl6ajdBMm1ZOFNoeVV5WU51dFY2MzV6Nkp0eXBMM0l1b0xibndrcU9jWGJ0MkxacWVGeFdTK2ZQbjE1bU9keVlxYUVSNHpoN1pUM2lKNnhLUGhpZGVIZzY3cFEyQXgwbXloMkxFUEZpWWM3M2VaRG54TmczWlk3TTdwMlpRRXM5cEUyODhsSE5zb1pjZXZtbTU4c29yNnp3bVB4MlBpMlNUY0U4b2F3Qzg2SkZnS0dzVGpGejYyZm1ZQTBYUGorRjJqeXliSE04aC8xcEt1VnpTSXNCY2IwaXhaTjVjNitKUnpGWDN2R0hWRXo2MDkvcXR0Y2VuMzIzVFJ6M3BUYjY0bDIxWGNOVm9aRVBabDdJOWJqRHQrS2ttcEx4TitSWlhuNEFQY1FKYUIvSmJsL2piRU54SXVoM2o3cEkrWlVUU0pGNUE5Sm1pQmtXUldJTlFMRTJhcDlMQ0RaZWRZa04rT2dUNmNLY3A3eGNUaWlhNHU4UkE2TzVMc1NhV3dibFdvdGtVRmFqRm9FTVJrZzZNVWN5aGZNdSt1UFhzbHhiNEVEMm5KU1N0RUttVmlHMGljTGxwaUVWcnVSRWpScVFQS3pwUDBZWDJBeFNqS0FKUmRGcGZvVW92amd4RU0rRllSY3YxMDRtSDRkMjRWdHBNcElWeEVXalNmT3FwcDJZRGxoUUhpd2sxSzdFR0poM0hLYmIveHE2bnNGNVNyYXc2dEo4ZFB2aEVxNTQ4MTZhKys0Sk5lbWFNclYzeGNYMzJ4bDd3MW5RODVVYktnZTdXaHNZNHZFUUUwYWp1U2dlNzF2ZWVpTkRUMm95WGpiSWhMZGppeTdrK2FhRzBLQy9wb05URUtsQ1c5UkhLdHRSaUVOT2dpcEhHUWNRZWlOd1R3SXU5MjJnR1RRL0NxRGpyY3c2VWx2UEFqT00zaEIzUElwYmpNVHhNNnlOY0EvY1hoV2VabndhZHJTaS8wNGVENjZROUFDTU13UlRXTWVpS01Vd2J4SmdtdnhoZUFzZ0l4aGlEc0NIM0d4S281NTlONDJKa1dnSnRtclJMRkxOd1BycStEV0RnQmlQeC92Nkpqd1JVS3ovYzF5anV2ZFM2cjU2RkpXNGdFL2N1SXJMRVBhek53VXhLb0pldmZ1K0F1OUNKMTh0bnk2anUzaVlZZzBMODNFTkp2Q2lRZlptOWxWdkIvUW9kMjFqWEVadUlRaHlnVUNCM0U3Q3AzOFBmQkNmV0M3RUJ1ZStXZkE0WUFDOTN4M2MwL0JMeDlqcnVuR2ZwN1F3U2I3bVczYzliSTI3cVNIYk8rYmNrb3cwOU44cnVzWThzTTJwS05qU3Q5VHhPQm1BOWdXMnVCOU1neitQRGlTVWV0TXUrcU13UTRhY2ExT3ZzRTI5WGtGQk5saFlmMUtSQjNrdERldTdlWGlDTGpGcUd1bXFHU25qdE1nQWxoTmtvWG5UcTNiMFJWUGFGclczR2EwVVNEK0ExQ2k0YitoNVJsZWdObmJJWThiSTJOSzMxUGM3YjVkckZQa2xFb040RXFIVVlNMlpNYUQxSXg1VkNyZHpvbWt4elk2b2JpMFc4NjMzQ2JYeEh1bXZUaVl2cVRWcGQwdEdNUVdjMmg1UzhHbkJ6WExUTzBYQUkwSytBbnBBMEs2WjVMbFdjOUkrZ1kwdHNRdHh3cmxaWGtrOUFCaUNmaUpaRm9CRVJ5TzFtMVlodVhMY3FBaUtRR2Fscnc4WlZFajBSRUlHdG5jQlNQQUFmZ1VNaUFpTFFDQWs4andHNHVSSGV1RzVaQkVUQWRaOGdJSis1WmN5bmZVUkVCRVNnMFJCNDJlKzBQKzBBK01yR0xKK085MGxCUVljZ0VZRnRuQURkYzgveWFSSUdBSm5xMHdxZmp2SUpyMEFpQWlLd2JSS2dsZUhQZkxxRjI0c0dnSG1LQVl5VTBOdW45ajVKUkVBRXRpMENNL3gyenZYcGhuaGJoWEw3YnI2UkVRa0crZFRMcDQ4L1R1Y0xFaEVRZ2EyS0FOWDhlUGg4REhLWVR4VDNzMUxJQUdRMytneUQwTmUxVDNwL3pZdUFDRFFzQXJqOHVSOHFhRmpYcDZzUkFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSRVFBUkVRQVJFUUFSR29tOEQvQTg1d0ZacHVRZm5kQUFBQUFFbEZUa1N1UW1DQyIvPgo8L2RlZnM+Cjwvc3ZnPgo="
+                                    alt="brand_gg" title="brand_gg"></a>
+                        </div>
+                        <p>Golden SpoonS – Siêu ứng dụng cho tín đồ ẩm thực.
+                            Tải App Hôm Nay Chạm Ngay Ưu Đãi.</p>
+                    </div>
+
+                    <div class="social-icons">
+                        <li><span class="social-link1"><a class="cursor-pointer social-link"
+                                    href="https://www.facebook.com/GoGiHouse.QuanThitNuongHanQuoc" target="_blank"
+                                    rel="noreferrer"><i class="fab fa-facebook-f"></i></a> </span>
+                        </li>
+
+                        <li><span class="social-link1"><a class="cursor-pointer social-link"
+                                    href="https://www.instagram.com/gogihouse.official" target="_blank"
+                                    rel="noreferrer"><i class="fab fa-instagram"></i></a> </span>
+                        </li>
+
+                        <li><span class="social-link1"><a class="cursor-pointer social-link"
+                                    href="https://www.youtube.com/channel/UCd3-QS4vCFnPvAEEpKwgNIw" target="_blank"
+                                    rel="noreferrer"><i class="fab fa-youtube"></i></a> </span>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <!-- body-cuối -->
+        </div>
+
+        <!-- FOOTER -->
+        <div class="site-footer">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="BBQ Gogi House">
+                    <p>Trải nghiệm ẩm thực nướng Hàn Quốc chuẩn vị cùng dịch vụ tận tình và không gian ấm cúng.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Thông tin</h4>
+                    <ul>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Khuyến mãi</a></li>
+                        <li><a href="#">Hệ thống cửa hàng</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Liên hệ</h4>
+                    <p>Hotline: <strong>1900 123 456</strong></p>
+                    <p>Email: <a href="mailto:support@gogi.vn">support@gogi.vn</a></p>
+                    <p>Địa chỉ: 123 BBQ Street, TP.HCM</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gogi House. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><img src="img/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/ig.png" alt="Instagram"></a>
+                    <a href="#"><img src="img/ytb.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <!-- contai cuói -->
+    </div>
+
+
+
+    <script src="./js/index.js"></script>
+    <script src="./js/bestSellers.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="./js/menuFoods.js"></script>
+    <script src="./js/blogSlider.js"></script>
+    <script src="/js/reset.js"></script>
+</body>
+
+</html>

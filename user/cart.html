@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - BBQ Gogi House</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+
+<body>
+    <!-- Header Nav -->
+    <div class="header">
+        <div class="header-nav">
+            <nav class="nav">
+                <ul>
+                    <li><a href="/user/index.html">Trang chủ</a></li>
+                    <li><a href="#your-best-choice">Thực đơn</a></li>
+                    <li><a href="#media-section">Tin Tức</a></li>
+                    <li>
+                        <img src="/assets/img/img-header-nav/logo-nav.png" alt="GOGI-LOGO">
+                    </li>
+                    <li><a href="#">Trợ giúp</a></li>
+                    <li><a href="#">Thông báo</a></li>
+                    <li id="nav-avatar-container"></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-header">
+            <h1 class="cart-title">Giỏ hàng</h1>
+            <input class="cart-search" type="text" placeholder="Tìm món ăn...">
+        </div>
+
+        <div class="cart-table-wrapper">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Tên món</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Tổng</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-list">
+                    <!-- <tr>
+                        <td><img src="/assets/img/img-bestseller/diem_bung_tuoi_200_6.png" alt="Điểm Bụng Tươi"
+                                class="cart-item-img"></td>
+                        <td>Điểm Bụng Tươi</td>
+                        <td>120.000₫</td>
+                        <td>
+                            <div class="quantity-control">
+                                <button class="qty-btn">-</button>
+                                <span class="qty-number">1</span>
+                                <button class="qty-btn">+</button>
+                            </div>
+                        </td>
+                        <td>120.000₫</td>
+                        <td><button class="btn-delete">Xóa</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cart-total-section">
+            <div class="cart-total">
+                <span>Tổng cộng:</span>
+                <span class="cart-total-price">120.000₫</span>
+            </div>
+            <button class="btn-checkout" id="btn-checkout-js">Thanh toán</button>
+        </div>
+    </div>
+
+    <script src="/js/renderCart.js"></script>
+    <script src="/js/user.js"></script>
+</body>
+
+</html>

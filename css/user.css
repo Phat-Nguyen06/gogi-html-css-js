@@ -1,0 +1,111 @@
+.nav-avatar {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+
+.floating-cart {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #3a2a26;
+  color: white;
+  padding: 14px 16px;
+  border-radius: 50px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+/*  */
+
+.user-info-box {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 320px;
+  background-color: #3a2a26;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  padding: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.user-avatar-large {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 16px;
+  border: 2px solid #fff;
+}
+
+.user-info-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-info-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.username {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.btn-edit {
+  padding: 6px 12px;
+  background-color: #d4bfaa;
+  color: #3a2a26;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.btn-edit:hover {
+  background-color: #c0aa91;
+}
+
+.user-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid #6d5a50;
+  padding-top: 15px;
+}
+
+.user-option {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.user-option:hover {
+  background-color: #5a4740;
+}
+
+.logout {
+  color: #e57373;
+}
+
