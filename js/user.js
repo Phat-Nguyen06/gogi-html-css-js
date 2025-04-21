@@ -21,9 +21,14 @@ avatarContainer.addEventListener("click", () => {
   const userAvatarLarge = document.querySelector(".user-avatar-large");
   let username = document.querySelector(".username");
   let logout = document.querySelector(".logout")
+  let cartNav = document.getElementById("cartNav")
 
   userAvatarLarge.src = currentUser.avatar || "/assets/avatar-default.png";
   username.textContent = currentUser.username;
+
+  cartNav.addEventListener("click", () => {
+    window.location.href = "https://phat-nguyen06.github.io/gogi-html-css-js/user/cart.html";
+  });
 
   logout.addEventListener("click", () => {
     localStorage.removeItem("loggedIn");

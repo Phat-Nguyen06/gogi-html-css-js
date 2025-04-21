@@ -1,4 +1,4 @@
-let menuFoods = [
+let menuFoods = JSON.parse(localStorage.getItem("menuFoods")) || [
     {
         title: "Salad Cá Hồi",
         price: 89000,
@@ -185,6 +185,7 @@ let menuFoods = [
     }
 ];
 
+localStorage.setItem("menuFoods", JSON.stringify(menuFoods));
 
 let currentPage = 1;
 let foodsPerPage = 8;

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang quản trị - BBQ Gogi House</title>
+    <link rel="stylesheet" href="https://phat-nguyen06.github.io/gogi-html-css-js/css/admin-menu.css" />
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="https://phat-nguyen06.github.io/gogi-html-css-js/assets/img/img-header-nav/logo-nav.png" alt="Logo" />
+            <h2>Admin</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="https://phat-nguyen06.github.io/gogi-html-css-js/admin/index.html">Tổng quan</a>
+            <a href="#">Quản lý tài khoản</a>
+            <a href="#">Quản lý đơn hàng</a>
+            <a href="#" class="active">Sản phẩm</a>
+            <a href="https://phat-nguyen06.github.io/gogi-html-css-js/login.html">Đăng xuất</a>
+        </nav>
+    </aside>
+
+    <section class="admin-content">
+        <div class="orders-header">
+            <h2>Quản lý món ăn</h2>
+            <button class="btn-add">+ Thêm món mới</button>
+        </div>
+
+        <div class="orders-table-wrapper">
+            <table class="orders-table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Hình ảnh</th>
+                        <th>Tên món</th>
+                        <th>Loại</th>
+                        <th>Giá</th>
+                        <th>Đã bán</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody id="orders-table-body">
+                    <!-- Mẫu 1 món ăn -->
+                    <!-- <tr>
+                        <td>1</td>
+                        <td><img src="/assets/img/img-foods/food1-salad-ca-hoi.png" alt="Salad Cá Hồi "
+                                class="food-img"/></td>
+                        <td>Salad Cá Hồi</td>
+                        <td>Salad/Khai vị</td>
+                        <td>89.000₫</td>
+                        <td>6</td>
+                        <td>
+                            <button class="btn-edit">Sửa</button>
+                            <button class="btn-delete">Xóa</button>
+                        </td>
+                    </tr> -->
+
+                    <!-- Thêm từ JS -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- Modal Thêm món ăn -->
+    <div class="modal" id="add-food-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeAddModal()">&times;</span>
+            <h3>Thêm món ăn</h3>
+            <form id="add-food-form">
+                <label for="add-food-image">Link hình ảnh:</label>
+                <input type="text" id="add-food-image" required />
+
+                <label for="add-food-title">Tên món ăn:</label>
+                <input type="text" id="add-food-title" required />
+
+                <label for="add-food-type">Loại:</label>
+                <input type="text" id="add-food-type" required />
+
+                <label for="add-food-price">Giá:</label>
+                <input type="number" id="add-food-price" required />
+
+                <label for="add-food-sold">Đã bán:</label>
+                <input type="number" id="add-food-sold" required />
+
+                <button type="submit" class="btn-submit">Thêm</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Sửa món ăn -->
+    <div class="modal" id="edit-food-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeEditModal()">&times;</span>
+            <h3>Sửa món ăn</h3>
+            <form id="edit-food-form">
+                <label for="edit-food-image">Link hình ảnh:</label>
+                <input type="text" id="edit-food-image" required />
+
+                <label for="edit-food-title">Tên món ăn:</label>
+                <input type="text" id="edit-food-title" required />
+
+                <label for="edit-food-type">Loại:</label>
+                <input type="text" id="edit-food-type" required />
+
+                <label for="edit-food-price">Giá:</label>
+                <input type="number" id="edit-food-price" required />
+
+                <label for="edit-food-sold">Đã bán:</label>
+                <input type="number" id="edit-food-sold" required />
+
+                <button type="submit" class="btn-submit">Cập nhật</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://phat-nguyen06.github.io/gogi-html-css-js/js/admin-menu.js.js"></script>
+</body>
+
+</html>
